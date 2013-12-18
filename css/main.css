@@ -1,0 +1,135 @@
+/* line 17, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 15, main.scss */
+#ncstate-util {
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 2px solid #c00;
+  background: #333;
+  font-family: arial, sans-serif;
+  font-size: .9em; }
+  /* line 24, main.scss */
+  #ncstate-util .ncstate-util-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto; }
+  /* line 30, main.scss */
+  #ncstate-util .ncstate-util-home {
+    float: left; }
+    /* line 34, main.scss */
+    #ncstate-util .ncstate-util-home a {
+      display: block;
+      padding: 8px 9px 9px 9px;
+      position: relative;
+      left: -9px; }
+      /* line 41, main.scss */
+      #ncstate-util .ncstate-util-home a:hover {
+        background: #444; }
+  /* line 49, main.scss */
+  #ncstate-util .ncstate-util-options {
+    float: right; }
+  /* line 53, main.scss */
+  #ncstate-util .ncstate-util-toggle {
+    float: left;
+    margin-top: 2px;
+    margin-right: 2px;
+    background: #fff; }
+    /* line 60, main.scss */
+    #ncstate-util .ncstate-util-toggle a {
+      display: block;
+      background: url("../img/more.gif") no-repeat center;
+      width: 29px;
+      height: 26px;
+      text-indent: 100%;
+      overflow: hidden;
+      white-space: nowrap; }
+      /* line 68, main.scss */
+      #ncstate-util .ncstate-util-toggle a:hover {
+        opacity: .95; }
+  /* line 75, main.scss */
+  #ncstate-util .ncstate-util-search {
+    overflow: hidden;
+    *zoom: 1;
+    float: left;
+    background: #666;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+    /* line 84, main.scss */
+    #ncstate-util .ncstate-util-search input[type="submit"] {
+      margin: 2px 2px 2px;
+      float: left;
+      background: url("../img/search.gif") no-repeat center;
+      border: none;
+      width: 24px;
+      height: 22px;
+      padding: 0px;
+      text-indent: 100%;
+      overflow: hidden;
+      white-space: nowrap; }
+    /* line 98, main.scss */
+    #ncstate-util .ncstate-util-search input[type="search"] {
+      float: left;
+      background: #666;
+      border: none;
+      color: #fff;
+      width: auto;
+      padding: 6px;
+      text-align: center; }
+  /* line 110, main.scss */
+  #ncstate-util a {
+    color: #fff;
+    text-decoration: none; }

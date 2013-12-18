@@ -1,0 +1,115 @@
+// sass framework(s)
+@import "compass";
+
+// reset
+@include global-reset;
+
+// mixins
+@mixin hideText{
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+// Start main styles
+#ncstate-util {
+	
+	@include clearfix;
+	
+	border-bottom: 2px solid #c00;
+	background: #333;
+	font-family: arial, sans-serif;
+	font-size: .9em;
+	
+	.ncstate-util-wrapper{
+		max-width: 1000px;
+		width: 100%;
+		margin: 0px auto;
+	}
+	
+	.ncstate-util-home{
+		
+		float: left;
+		
+		a{
+			
+			display: block;
+			padding: 8px 9px 9px 9px;
+			position: relative;
+			left: -9px;
+			
+			&:hover{
+				background: #444;
+			}
+			
+		}
+		
+	}
+	
+	.ncstate-util-options{
+		float: right;
+	}
+	
+	.ncstate-util-toggle{
+		
+		float: left;
+		margin-top: 2px;
+		margin-right: 2px;
+		background: #fff;
+		
+		a{
+			display: block;
+			background: url("../img/more.gif") no-repeat center;
+			width: 29px;
+			height: 26px;
+			
+			@include hideText;
+			
+			&:hover{
+				opacity: .95;
+			}
+		}
+		
+	}
+	
+	.ncstate-util-search{
+		
+		@include clearfix;
+		
+		float: left;
+		background: #666;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		
+		input[type="submit"]{
+			
+			margin: 2px 2px 2px;
+			float: left;
+			background: url("../img/search.gif") no-repeat center;
+			border: none;
+			width: 24px;
+			height: 22px;
+			padding: 0px;
+			
+			@include hideText;
+			
+		}
+		
+		input[type="search"]{
+			float: left;
+			background: #666;
+			border: none;
+			color: #fff;
+			width: auto;
+			padding: 6px;
+			text-align: center;
+		}
+		
+	}
+	
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+}
