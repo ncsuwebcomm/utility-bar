@@ -1,67 +1,104 @@
-// sass framework(s)
+// SASS Framework(s)
+
 @import "compass";
 
-// reset
+// Eric Meyer Reset
+
 @include global-reset;
 
-// mixins
+// Mixins & Variables
+
 @mixin hideText{
-	text-indent: 100%;
+	text-indent: 200%;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-// Start main styles
+// Main Styles 
+
 #ncstate-util {
+
+	/* apply a natural box layout model to all elements */
+	*, *:before, *:after {
+		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
 	
 	@include clearfix;
 	
-	border-bottom: 2px solid #c00;
 	background: #333;
-	font-family: arial, sans-serif;
-	font-size: .9em;
+	font-family: Univers, arial, sans-serif;
+	font-size: 14px;
+	line-height: 1;
 	
-	.ncstate-util-wrapper{
-		max-width: 1000px;
-		width: 100%;
-		margin: 0px auto;
+	#ncstate-util-wrapper-primary{
+		height: 30px;
 	}
 	
-	.ncstate-util-home{
+	.ncstate-util-wrapper{
+		max-width: 1050px;
+		width: 100%;
+		margin: 0px auto;
+		padding: 0%;
+	}
+	
+	#ncstate-util-links{
+		background: #666;		
+		dl{padding: 1.5em 0em;}
+	}
+	
+	#ncstate-util-links{
+		
+		@include transition("height linear ease-all 1s");
+		
+		overflow: visible;
+		
+		&.is-hidden{
+			
+			@include transition("height linear ease-all 1s");
+			height: 0px;
+			
+		}
+	}
+	
+	#ncstate-util-home{
 		
 		float: left;
 		
 		a{
 			
+			background-image: url("../img/arrow.png");
+			background-repeat: no-repeat;
+			background-position: top left;
 			display: block;
-			padding: 8px 9px 9px 9px;
+			padding: 8px 9px 8px 28px;
+			/*
 			position: relative;
-			left: -9px;
+			left: -9px;*/
 			
 			&:hover{
-				background: #444;
+				background-color: #444;
 			}
 			
 		}
 		
 	}
 	
-	.ncstate-util-options{
+	#ncstate-util-options{
 		float: right;
+		background: #666;
+		height: 30px;
 	}
-	
-	.ncstate-util-toggle{
+
+	#ncstate-util-toggle{
 		
 		float: left;
-		margin-top: 2px;
-		margin-right: 2px;
 		background: #fff;
 		
 		a{
 			display: block;
-			background: url("../img/more.gif") no-repeat center;
-			width: 29px;
-			height: 26px;
+			background: #666 url("../img/more.gif") no-repeat center; /* replace this with and transparent icon */
+			width: 30px;
+			height: 30px;
 			
 			@include hideText;
 			
@@ -72,27 +109,28 @@
 		
 	}
 	
-	.ncstate-util-search{
+	#ncstate-util-search{
 		
 		@include clearfix;
 		
 		float: left;
 		background: #666;
-		margin-top: 2px;
-		margin-bottom: 2px;
 		
 		input[type="submit"]{
 			
-			margin: 2px 2px 2px;
 			float: left;
-			background: url("../img/search.gif") no-repeat center;
+			background: #555 url("../img/search.gif") no-repeat center; /* replace this with and transparent icon */
 			border: none;
-			width: 24px;
-			height: 22px;
+			width: 30px;
+			height: 30px;
 			padding: 0px;
 			
-			@include hideText;
+			&:hover{
+				cursor: pointer;
+				opacity: .7;
+			}
 			
+			@include hideText;
 		}
 		
 		input[type="search"]{
@@ -103,6 +141,13 @@
 			width: auto;
 			padding: 6px;
 			text-align: center;
+			height: 30px;
+			
+			display: none;
+			
+			&:focus{
+				background: #777;
+			}
 		}
 		
 	}
@@ -113,3 +158,4 @@
 	}
 
 }
+

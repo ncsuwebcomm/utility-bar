@@ -54,82 +54,124 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 15, main.scss */
+/* line 19, main.scss */
 #ncstate-util {
+  /* apply a natural box layout model to all elements */
   overflow: hidden;
   *zoom: 1;
-  border-bottom: 2px solid #c00;
   background: #333;
-  font-family: arial, sans-serif;
-  font-size: .9em; }
-  /* line 24, main.scss */
+  font-family: Univers, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1; }
+  /* line 22, main.scss */
+  #ncstate-util *, #ncstate-util *:before, #ncstate-util *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 33, main.scss */
+  #ncstate-util #ncstate-util-wrapper-primary {
+    height: 30px; }
+  /* line 37, main.scss */
   #ncstate-util .ncstate-util-wrapper {
-    max-width: 1000px;
+    max-width: 1050px;
     width: 100%;
-    margin: 0px auto; }
-  /* line 30, main.scss */
-  #ncstate-util .ncstate-util-home {
-    float: left; }
-    /* line 34, main.scss */
-    #ncstate-util .ncstate-util-home a {
-      display: block;
-      padding: 8px 9px 9px 9px;
-      position: relative;
-      left: -9px; }
-      /* line 41, main.scss */
-      #ncstate-util .ncstate-util-home a:hover {
-        background: #444; }
+    margin: 0px auto;
+    padding: 0%; }
+  /* line 44, main.scss */
+  #ncstate-util #ncstate-util-links {
+    background: #666; }
+    /* line 46, main.scss */
+    #ncstate-util #ncstate-util-links dl {
+      padding: 1.5em 0em; }
   /* line 49, main.scss */
-  #ncstate-util .ncstate-util-options {
-    float: right; }
-  /* line 53, main.scss */
-  #ncstate-util .ncstate-util-toggle {
-    float: left;
-    margin-top: 2px;
-    margin-right: 2px;
-    background: #fff; }
-    /* line 60, main.scss */
-    #ncstate-util .ncstate-util-toggle a {
+  #ncstate-util #ncstate-util-links {
+    -webkit-transition: "height linear ease-all 1s";
+    -moz-transition: "height linear ease-all 1s";
+    -o-transition: "height linear ease-all 1s";
+    transition: "height linear ease-all 1s";
+    overflow: visible; }
+    /* line 55, main.scss */
+    #ncstate-util #ncstate-util-links.is-hidden {
+      -webkit-transition: "height linear ease-all 1s";
+      -moz-transition: "height linear ease-all 1s";
+      -o-transition: "height linear ease-all 1s";
+      transition: "height linear ease-all 1s";
+      height: 0px; }
+  /* line 63, main.scss */
+  #ncstate-util #ncstate-util-home {
+    float: left; }
+    /* line 67, main.scss */
+    #ncstate-util #ncstate-util-home a {
+      background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      background-position: top left;
       display: block;
-      background: url("../img/more.gif") no-repeat center;
-      width: 29px;
-      height: 26px;
-      text-indent: 100%;
+      padding: 8px 9px 8px 28px;
+      /*
+      position: relative;
+      left: -9px;*/ }
+      /* line 78, main.scss */
+      #ncstate-util #ncstate-util-home a:hover {
+        background-color: #444; }
+  /* line 86, main.scss */
+  #ncstate-util #ncstate-util-options {
+    float: right;
+    background: #666;
+    height: 30px; }
+  /* line 92, main.scss */
+  #ncstate-util #ncstate-util-toggle {
+    float: left;
+    background: #fff; }
+    /* line 97, main.scss */
+    #ncstate-util #ncstate-util-toggle a {
+      display: block;
+      background: #666666 url("../img/more.gif") no-repeat center;
+      /* replace this with and transparent icon */
+      width: 30px;
+      height: 30px;
+      text-indent: 200%;
       overflow: hidden;
       white-space: nowrap; }
-      /* line 68, main.scss */
-      #ncstate-util .ncstate-util-toggle a:hover {
+      /* line 105, main.scss */
+      #ncstate-util #ncstate-util-toggle a:hover {
         opacity: .95; }
-  /* line 75, main.scss */
-  #ncstate-util .ncstate-util-search {
+  /* line 112, main.scss */
+  #ncstate-util #ncstate-util-search {
     overflow: hidden;
     *zoom: 1;
     float: left;
-    background: #666;
-    margin-top: 2px;
-    margin-bottom: 2px; }
-    /* line 84, main.scss */
-    #ncstate-util .ncstate-util-search input[type="submit"] {
-      margin: 2px 2px 2px;
+    background: #666; }
+    /* line 119, main.scss */
+    #ncstate-util #ncstate-util-search input[type="submit"] {
       float: left;
-      background: url("../img/search.gif") no-repeat center;
+      background: #555555 url("../img/search.gif") no-repeat center;
+      /* replace this with and transparent icon */
       border: none;
-      width: 24px;
-      height: 22px;
+      width: 30px;
+      height: 30px;
       padding: 0px;
-      text-indent: 100%;
+      text-indent: 200%;
       overflow: hidden;
       white-space: nowrap; }
-    /* line 98, main.scss */
-    #ncstate-util .ncstate-util-search input[type="search"] {
+      /* line 128, main.scss */
+      #ncstate-util #ncstate-util-search input[type="submit"]:hover {
+        cursor: pointer;
+        opacity: .7; }
+    /* line 136, main.scss */
+    #ncstate-util #ncstate-util-search input[type="search"] {
       float: left;
       background: #666;
       border: none;
       color: #fff;
       width: auto;
       padding: 6px;
-      text-align: center; }
-  /* line 110, main.scss */
+      text-align: center;
+      height: 30px;
+      display: none; }
+      /* line 148, main.scss */
+      #ncstate-util #ncstate-util-search input[type="search"]:focus {
+        background: #777; }
+  /* line 155, main.scss */
   #ncstate-util a {
     color: #fff;
     text-decoration: none; }
