@@ -2,31 +2,42 @@
 	
 	"use strict";
 	
-	var toggleElm = d.getElementById('ncstate-util-toggle-link'),
-		toggleView = d.getElementById('ncstate-util-links'),
+	var toggleElm = d.getElementById('ncstate-brand-bar-toggle-link'),
+		toggleView = d.getElementsByClassName('ncstate-brand-bar-links')[0],
+		searchForm = d.getElementsByClassName('ncstate-brand-bar-search-form')[0],
+		searchField = d.getElementsByClassName('ncstate-brand-bar-search-field')[0],
 		classPattern = /\bis-hidden\b/g;
 
-	// Define actions
+	// Define Event Handlers
 	
-	var handleToggleElement = function(){
+	var handleToggleElement = function(e){
+		
+		e.preventDefault();
 		
 		if(classPattern.exec(toggleView.className)){
 			toggleView.className = toggleView.className.replace(classPattern,'');
-			console.log('0');
 		} else {
 			toggleView.className = toggleView.className + ' is-hidden';
-			console.log('1');
 		}
-		
-		console.log('hi');
-		
-		return false;
 			
 	};
 	
-	// Bind actions
+	var handleSearchSubmit = function(e){
+		
+		var style = w.getComputedStyle(searchField),
+			display = style.getPropertyValue('display');
+		
+		if(display === "none"){
+			e.preventDefault();
+			searchField.style.display = 'block';
+		}
+
+	};
+	
+	// Bind Event Handlers
 
 	toggleElm.addEventListener('click', handleToggleElement, false);
+	searchForm.addEventListener('submit', handleSearchSubmit, false);
 	
 	
 })(window,document);

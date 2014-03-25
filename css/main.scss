@@ -1,12 +1,8 @@
-// SASS Framework(s)
+// sass framework(s)
 
 @import "compass";
 
-// Eric Meyer Reset
-
-@include global-reset;
-
-// Mixins & Variables
+// mixins & Variables
 
 @mixin hideText{
 	text-indent: 200%;
@@ -14,148 +10,270 @@
 	white-space: nowrap;
 }
 
-// Main Styles 
+// color schemes
 
-#ncstate-util {
+$color: gray;
 
-	/* apply a natural box layout model to all elements */
+$primary-color: #cc0000;
+$text-color: #ffffff;
+$link-color: #ffffff;
+$accent-color: darken($primary-color,10%);
+$highlight-color: darken($primary-color,3%);
+
+@if $color == gray{
+	$primary-color: #333;
+	$accent-color: darken($primary-color,10%);
+	$highlight-color: darken($primary-color,3%);
+//} @else if $color == white{
+//	$primary-color: #fff;
+//	$text-color: #cc0000;
+//	$link-color: #cc0000;
+} @else if $color == black{
+	$primary-color: #000;
+	$accent-color: lighten($primary-color,20%);
+	$highlight-color: lighten($primary-color,10%);
+}
+
+
+
+
+// main Styles 
+
+.ncstate-brand-bar {
+
+	// Eric Meyer reset 
+	
+	@include global-reset;
+	
+	// use border-box-sizing
+	
 	*, *:before, *:after {
 		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 	}
 	
 	@include clearfix;
+
+	// position brand bar
 	
-	background: #333;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	
+	background: $primary-color;
 	font-family: Univers, arial, sans-serif;
 	font-size: 14px;
 	line-height: 1;
+
 	
-	#ncstate-util-wrapper-primary{
-		height: 30px;
+	a{
+		color: $text-color;
+		text-decoration: none;
 	}
 	
-	.ncstate-util-wrapper{
+
+	// main bar wrappers
+
+	.ncstate-brand-bar-wrapper{
 		max-width: 1050px;
 		width: 100%;
 		margin: 0px auto;
 		padding: 0%;
+		padding-bottom: 1.5em;
+	}
+
+	.ncstate-brand-bar-wrapper-primary{
+		height: 30px;
+		position: relative;
 	}
 	
-	#ncstate-util-links{
-		background: #666;		
-		dl{padding: 1.5em 0em;}
-	}
+	// resources container
 	
-	#ncstate-util-links{
+	.ncstate-brand-bar-links{
 		
-		@include transition("height linear ease-all 1s");
-		
-		overflow: visible;
+		background: $accent-color;
+		padding: 0 10px;
+		padding-bottom: 1.5em;
+		overflow: auto;		
 		
 		&.is-hidden{
-			
+		
 			@include transition("height linear ease-all 1s");
-			height: 0px;
+			display: none;
+		
+		}
+		
+		dl{
 			
+			line-height: 1.3em;
+			
+			dt{
+				color: $text-color;
+				padding-bottom: .5em;
+			}
+		
+			dd{
+				font-weight: lighter;
+				a {color: $link-color;}
+				a:hover{text-decoration: underline;}
+			}
+		
+			padding-top: 1.5em;
 		}
 	}
+
+	// Home button
+		
+	.ncstate-brand-bar-home{
 	
-	#ncstate-util-home{
-		
 		float: left;
-		
+	
 		a{
-			
+		
 			background-image: url("../img/arrow.png");
 			background-repeat: no-repeat;
 			background-position: top left;
 			display: block;
-			padding: 8px 9px 8px 28px;
-			/*
-			position: relative;
-			left: -9px;*/
-			
-			&:hover{
-				background-color: #444;
-			}
-			
-		}
+			padding: 9px 14px 7px 28px;
 		
-	}
+			&:hover{
+				background-color: $accent-color;
+			}
+		
+		}
 	
-	#ncstate-util-options{
-		float: right;
-		background: #666;
-		height: 30px;
 	}
 
-	#ncstate-util-toggle{
-		
+	// Search/toggle container
+	
+	.ncstate-brand-bar-options{
+		background: $accent-color;
+		height: 30px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	.ncstate-brand-bar-toggle{
+	
 		float: left;
-		background: #fff;
-		
+	
 		a{
 			display: block;
-			background: #666 url("../img/more.gif") no-repeat center; /* replace this with and transparent icon */
+			background-color: $accent-color;
+			background-image: url("../img/more.png");
+			background-repeat: no-repeat;
+			background-position: center;
 			width: 30px;
 			height: 30px;
-			
+		
 			@include hideText;
-			
+		
 			&:hover{
-				opacity: .95;
+				background-color: $highlight-color;
 			}
 		}
-		
+	
 	}
 	
-	#ncstate-util-search{
-		
+	.ncstate-brand-bar-search{
+	
 		@include clearfix;
+	
+		float: left;
+		background: $accent-color;
+	
+	}
+	
+	.ncstate-brand-bar-search-submit{
 		
 		float: left;
-		background: #666;
-		
-		input[type="submit"]{
-			
-			float: left;
-			background: #555 url("../img/search.gif") no-repeat center; /* replace this with and transparent icon */
-			border: none;
-			width: 30px;
-			height: 30px;
-			padding: 0px;
-			
-			&:hover{
-				cursor: pointer;
-				opacity: .7;
-			}
-			
-			@include hideText;
+		background-color: $accent-color;
+		background-image: url("../img/search.png");
+		background-repeat: no-repeat;
+		background-position: center; /* replace this with and transparent icon */
+		border: none;
+		width: 30px;
+		height: 30px;
+		padding: 0px;
+	
+		&:hover{
+			cursor: pointer;
+			background-color: $highlight-color;
 		}
-		
-		input[type="search"]{
-			float: left;
-			background: #666;
-			border: none;
-			color: #fff;
-			width: auto;
-			padding: 6px;
-			text-align: center;
-			height: 30px;
-			
-			display: none;
-			
-			&:focus{
-				background: #777;
-			}
-		}
-		
+	
+		@include hideText;
 	}
 	
-	a{
+	.ncstate-brand-bar-search-field{
+		float: left;
+		background-color: $accent-color;
+		border: none;
 		color: #fff;
-		text-decoration: none;
+		width: 150px;
+		padding: 6px;
+		text-align: center;
+		height: 30px;
+		display: none; /* hide in mobile view */
+		
+		&::-webkit-input-placeholder{color: #fff;}
+		&:-moz-placeholder{color: #fff;}
+		&::-moz-placeholder{color: #fff;}
+		&:-ms-input-placeholder{color: #fff;}
+		
+		&:focus{ background-color: $highlight-color; }
 	}
-
+	
 }
 
+
+// wider mobile devices & small tablets
+
+@media screen and (min-width: 500px) {
+	
+	.ncstate-brand-bar {
+		
+		.ncstate-brand-bar-links{
+			overflow: auto;
+			dl{
+				width: 50%;
+				float: left;
+				&:nth-child(3){clear: both;}
+				dd,dt{padding-right: 3%;}
+			}
+		}
+	
+		.ncstate-brand-bar-search-field{
+			display: block;
+		}
+	
+	}
+	
+}
+
+@media screen and (min-width: 800px) {
+	
+	.ncstate-brand-bar {
+		
+		.ncstate-brand-bar-links dl{
+			width: 25%;
+			float: left;
+			&:nth-child(3){clear: none;}
+		}
+		
+	}
+}
+
+@media screen and (min-width:1050px) {
+	
+	.ncstate-brand-bar {
+		
+		.ncstate-brand-bar-home a{
+			position: relative;
+			left: -9px;
+		}
+	
+	}
+	
+}
