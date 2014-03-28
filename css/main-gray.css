@@ -15,7 +15,7 @@ html {
   left: 0px;
   right: 0px;
   width: 100%;
-  background: #cc0000;
+  background: #333333;
   font-family: Univers, arial, sans-serif;
   font-size: 14px;
   line-height: 1;
@@ -90,7 +90,7 @@ html {
     position: relative; }
   /* line 94, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-links {
-    background: #990000;
+    background: #1a1a1a;
     padding: 0 10px;
     padding-bottom: 1.5em;
     overflow: auto; }
@@ -130,10 +130,10 @@ html {
       padding: 9px 14px 7px 28px; }
       /* line 141, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-home a:hover {
-        background-color: #990000; }
+        background-color: #1a1a1a; }
   /* line 151, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-options {
-    background: #990000;
+    background: #1a1a1a;
     height: 30px;
     position: absolute;
     top: 0px;
@@ -144,7 +144,7 @@ html {
     /* line 163, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-toggle a {
       display: block;
-      background-color: #990000;
+      background-color: #1a1a1a;
       background-image: url("../img/more.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -155,17 +155,17 @@ html {
       white-space: nowrap; }
       /* line 174, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-toggle a:hover {
-        background-color: #bd0000; }
+        background-color: #2b2b2b; }
   /* line 181, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search {
     overflow: hidden;
     *zoom: 1;
     float: left;
-    background: #990000; }
+    background: #1a1a1a; }
   /* line 190, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search-submit {
     float: left;
-    background-color: #990000;
+    background-color: #1a1a1a;
     background-image: url("../img/search.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -180,11 +180,11 @@ html {
     /* line 202, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-submit:hover {
       cursor: pointer;
-      background-color: #bd0000; }
+      background-color: #2b2b2b; }
   /* line 210, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search-field {
     float: left;
-    background-color: #990000;
+    background-color: #1a1a1a;
     border: none;
     color: #fff;
     width: 150px;
@@ -207,7 +207,7 @@ html {
       color: #fff; }
     /* line 226, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-field:focus {
-      background-color: #bd0000; }
+      background-color: #2b2b2b; }
 
 @media screen and (min-width: 500px) {
   /* line 238, main.scss */

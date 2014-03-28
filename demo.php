@@ -14,18 +14,17 @@
 
 	<p>Phasellus tempus vestibulum adipiscing. Maecenas et nibh id velit feugiat ornare. Nam turpis risus, tempor ut lacinia a, feugiat in quam. Curabitur faucibus hendrerit dui, ultrices convallis mi facilisis eget. Suspendisse sit amet ipsum sed magna sodales facilisis. Suspendisse in tellus vel leo luctus elementum ac eget augue. In hac habitasse platea dictumst. Donec id massa sit amet arcu vestibulum tristique. Aliquam sed pretium tortor. Quisque quis urna ac nibh laoreet pellentesque ac a ipsum. Nulla pulvinar fringilla fringilla. Aenean sodales in mauris in lobortis. Duis fringilla quam vel ipsum aliquet egestas. Sed vehicula mattis porttitor.</p>
 	
-	<script>
-	
-		var _bb = _bb || [];
-	
-		(function(){
-			var bar = document.createElement('script'); bar.type = 'text/javascript'; bar.async = true;
-			//bar.src = ('https:' == document.location.protocol ? 'http://ssl' : 'http://www') + '.webcommdev.com/utility/load-brand-bar.js';
-			bar.src = './load-brand-bar.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(bar, s);
-		})();
+	<?php
 		
-	</script>
+	// params
+	
+	// color (defaults red)
+	// maxWidth (defaults 960)
+	// searchDomain (defaults '')
+		
+	?>
+	
+	<script src="http://webcommdev.com/utility/bb.php?searchDomain=bulletin.ncsu.edu&color=gray"></script>
 	
 </body>
 </html>
