@@ -25,9 +25,9 @@
 			
 				<div class="ncstate-brand-bar-search" role="search" aria-label="Search www.ncsu.edu">
 					
-					<form action="http://search.ncsu.edu/" name="navsearchform" class="ncstate-brand-bar-search-form">
+					<form action="http://ncsu.thompsonnetnc.org/search" name="navsearchform" class="ncstate-brand-bar-search-form">
         
-						<input id="navcx" name="cx" type="hidden" value="015938034614832269431:v_-81jqd7vq">
+						<input id="navcx" name="cx" type="hidden" value="' + _bb.googleCustomSearchCode + '">
 					    <input id="navcof" name="cof" type="hidden" value="FORID:11">
 					    
 						<input class="ncstate-brand-bar-search-field" id="search-input" name="q" type="search"
@@ -47,75 +47,61 @@
 		
 			<div class="ncstate-brand-bar-wrapper">
 				
+				<ul class="ncstate-brand-bar-primary-util">
+					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-directory"><a href="http://www.ncsu.edu/directory/">Campus Directory</a></li>
+					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
+					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-map"><a href="http://www.ncsu.edu/campus_map/">Campus Map</a></li>
+					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
+				</ul>
+				
 				<dl>
-					<dt>Campus Resources:</dt>
+					<dt>Campus Resources</dt>
 					<dd>
 						<ul>
-							<li><a href="#">Campus Recreation</a></li>
-							<li><a href="#">University Housing</a></li>
-							<li><a href="#">NC State Bookstores</a></li>
-							<li><a href="#">Campus Police</a></li>
-							<li><a href="#">University Dining</a></li>
-							<li><a href="#">Health Services</a></li>
-							<li><a href="#">Calendar</a></li>
-							<li><a href="#">Campus Map</a></li>
-							<li><a href="#">Directory</a></li>
-							<li><a href="#">Libraries</a></li>
+							<li><a href="http://housing.ncsu.edu/">University Housing</a></li>
+							<li><a href="http://www.ncsudining.com/">Univeristy Dining</a></li>
+							<li><a href="http://shop.bookstore.ncsu.edu/">Bookstores</a></li>
+							<li><a href="http://ncsu.transloc.com/">Wolfline Buses</a></li>
+							<li><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
 						</ul>
 					</dd>
 				</dl>
 				
 				<dl>
-					<dt>Academic Resources:</dt>
+					<dt>Academic Resources</dt>
 					<dd>
 						<ul>
-							<li><a href="#">Distance Education</a></li>
-							<li><a href="#">International Affairs</a></li>
-							<li><a href="#">Undergraduate Admissions</a></li>
-							<li><a href="#">Moodle</a></li>
-							<li><a href="#">Wolfware</a></li>
-							<li><a href="#">Academic Departments</a></li>
-							<li><a href="#">Student Organizations</a></li>
-							<li><a href="#">Accredidation</a></li>
+							<li><a href="http://admissions.ncsu.edu/">Admissions</a></li>
+							<li><a href="http://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
+							<li><a href="https://wolfware.ncsu.edu/">Wolfware</a></li>
+							<li><a href="http://oia.ncsu.edu/">International Affairs</a></li>
+							<li><a href="http://distance.ncsu.edu/">Distance Education</a></li>
 						</ul>
 					</dd>
 				</dl>
 				
 				<dl>
-					<dt>Other Resources:</dt>
+					<dt>Other Resources</dt>
 					<dd>
 						<ul>
-							<li><a href="#">Cashier's Office</a></li>
-							<li><a href="#">Centennial Campus</a></li>
-							<li><a href="#">Financial Aid &amp; Scholarships</a></li>
-							<li><a href="#">OIT</a></li>
-							<li><a href="#">Registration &amp; Records</a></li>
-							<li><a href="#">Gmail</a></li>
-							<li><a href="#">E-PACK</a></li>
-							<li><a href="#">MyPack Portal</a></li>
-							<li><a href="#">Directory</a></li>
-							<li><a href="#">Giving</a></li>
-							<li><a href="#">Outreach/Extension</a></li>
+							<li><a href="http://www.fis.ncsu.edu/cashier/">Cashier's Office</a></li>
+							<li><a href="http://www.ncsu.edu/registrar/">Registration and Records</a></li>
+							<li><a href="http://www7.acs.ncsu.edu/financial_aid/">Financial Aid &amp; Scholarships</a></li>
+							<li><a href="http://www.ncsu.edu/outreach/">Outreach and Engagement</a></li>
+							<li><a href="http://help.ncsu.edu/">IT Help Desk</a></li>
 						</ul>
 					</dd>
 				</dl>
 				
 				<dl>
-					<dt>Colleges:</dt>
+					<dt>&nbsp;</dt>
 					<dd>
 						<ul>
-							<li><a href="#">Agriculture and Life Sciences</a></li>
-							<li><a href="#">Design</a></li>
-							<li><a href="#">Education</a></li>
-							<li><a href="#">Engineering</a></li>
-							<li><a href="#">Humanities and Social Sciences</a></li>
-							<li><a href="#">Poole Management</a></li>
-							<li><a href="#">Natural Resouces</a></li>
-							<li><a href="#">Sciences</a></li>
-							<li><a href="#">Textiles</a></li>
-							<li><a href="#">Veterinary Medicine</a></li>
-							<li><a href="#">First Year College</a></li>
-							<li><a href="#">Graduate School</a></li>
+							<li><a href="http://giving.ncsu.edu/">Giving</a></li>
+							<li><a href="http://news.ncsu.edu/">NC State News</a></li>
+							<li><a href="http://www.ncsu.edu/grad/">Graduate School</a></li>
+							<li><a href="http://gmail.ncsu.edu/">Gmail Access</a></li>
+							<li><a href="http://twitter.ncsu.edu/about.php">Social Media</a></li>
 						</ul>
 					</dd>
 				</dl>

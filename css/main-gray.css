@@ -1,12 +1,12 @@
-/* line 37, main.scss */
+/* line 38, main.scss */
 html {
   margin-top: 30px !important; }
 
-/* line 38, main.scss */
+/* line 39, main.scss */
 * html body {
   margin-top: 30px !important; }
 
-/* line 42, main.scss */
+/* line 43, main.scss */
 .ncstate-brand-bar {
   overflow: hidden;
   *zoom: 1;
@@ -20,7 +20,7 @@ html {
   font-size: 14px;
   line-height: 1;
   z-index: 1000 !important; }
-  /* line 17, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 5, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar html, .ncstate-brand-bar body, .ncstate-brand-bar div, .ncstate-brand-bar span, .ncstate-brand-bar applet, .ncstate-brand-bar object, .ncstate-brand-bar iframe,
   .ncstate-brand-bar h1, .ncstate-brand-bar h2, .ncstate-brand-bar h3, .ncstate-brand-bar h4, .ncstate-brand-bar h5, .ncstate-brand-bar h6, .ncstate-brand-bar p, .ncstate-brand-bar blockquote, .ncstate-brand-bar pre,
   .ncstate-brand-bar a, .ncstate-brand-bar abbr, .ncstate-brand-bar acronym, .ncstate-brand-bar address, .ncstate-brand-bar big, .ncstate-brand-bar cite, .ncstate-brand-bar code,
@@ -40,108 +40,119 @@ html {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline; }
-  /* line 22, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar html {
     line-height: 1; }
-  /* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar ol, .ncstate-brand-bar ul {
     list-style: none; }
-  /* line 26, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar table {
     border-collapse: collapse;
     border-spacing: 0; }
-  /* line 28, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar caption, .ncstate-brand-bar th, .ncstate-brand-bar td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle; }
-  /* line 30, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar q, .ncstate-brand-bar blockquote {
     quotes: none; }
-    /* line 103, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+    /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
     .ncstate-brand-bar q:before, .ncstate-brand-bar q:after, .ncstate-brand-bar blockquote:before, .ncstate-brand-bar blockquote:after {
       content: "";
       content: none; }
-  /* line 32, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-brand-bar a img {
     border: none; }
-  /* line 116, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-  .ncstate-brand-bar article, .ncstate-brand-bar aside, .ncstate-brand-bar details, .ncstate-brand-bar figcaption, .ncstate-brand-bar figure, .ncstate-brand-bar footer, .ncstate-brand-bar header, .ncstate-brand-bar hgroup, .ncstate-brand-bar menu, .ncstate-brand-bar nav, .ncstate-brand-bar section, .ncstate-brand-bar summary {
+  /* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  .ncstate-brand-bar article, .ncstate-brand-bar aside, .ncstate-brand-bar details, .ncstate-brand-bar figcaption, .ncstate-brand-bar figure, .ncstate-brand-bar footer, .ncstate-brand-bar header, .ncstate-brand-bar hgroup, .ncstate-brand-bar main, .ncstate-brand-bar menu, .ncstate-brand-bar nav, .ncstate-brand-bar section, .ncstate-brand-bar summary {
     display: block; }
-  /* line 50, main.scss */
+  /* line 51, main.scss */
   .ncstate-brand-bar *, .ncstate-brand-bar *:before, .ncstate-brand-bar *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  /* line 71, main.scss */
+  /* line 72, main.scss */
   .ncstate-brand-bar a {
     color: white;
     text-decoration: none; }
-  /* line 79, main.scss */
+  /* line 80, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-wrapper {
     max-width: 960px;
     width: 100%;
     margin: 0px auto;
     padding: 0%;
     padding-bottom: 1.5em; }
-  /* line 87, main.scss */
+  /* line 88, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-wrapper-primary {
     height: 30px;
     position: relative; }
-  /* line 94, main.scss */
+  /* line 95, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-links {
     background: #1a1a1a;
     padding: 0 10px;
     padding-bottom: 1.5em;
     overflow: auto; }
-    /* line 101, main.scss */
+    /* line 102, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links.is-hidden {
-      -webkit-transition: "height linear ease-all 1s";
       -moz-transition: "height linear ease-all 1s";
       -o-transition: "height linear ease-all 1s";
+      -webkit-transition: "height linear ease-all 1s";
       transition: "height linear ease-all 1s";
       display: none; }
-    /* line 108, main.scss */
+    /* line 109, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links dl {
       line-height: 1.3em;
       padding-top: 1.5em; }
-      /* line 112, main.scss */
+      /* line 113, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links dl dt {
         color: white;
-        padding-bottom: .5em; }
-      /* line 117, main.scss */
+        padding-bottom: .5em;
+        text-transform: uppercase; }
+        /* line 116, main.scss */
+        .ncstate-brand-bar .ncstate-brand-bar-links dl dt ul li:before {
+          display: none; }
+        /* line 119, main.scss */
+        .ncstate-brand-bar .ncstate-brand-bar-links dl dt.ncstate-brand-bar-primary-util {
+          margin-bottom: 1.5em;
+          text-transform: none; }
+      /* line 125, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links dl dd {
         font-weight: lighter; }
-        /* line 119, main.scss */
+        /* line 127, main.scss */
         .ncstate-brand-bar .ncstate-brand-bar-links dl dd a {
-          color: white; }
-        /* line 120, main.scss */
+          color: #999999; }
+        /* line 128, main.scss */
         .ncstate-brand-bar .ncstate-brand-bar-links dl dd a:hover {
           text-decoration: underline; }
-  /* line 129, main.scss */
+        /* line 129, main.scss */
+        .ncstate-brand-bar .ncstate-brand-bar-links dl dd ul li:before {
+          display: none; }
+  /* line 138, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-home {
     float: left; }
-    /* line 133, main.scss */
+    /* line 142, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-home a {
       background-image: url("../img/arrow.png");
       background-repeat: no-repeat;
       background-position: top left;
       display: block;
       padding: 9px 14px 7px 28px; }
-      /* line 141, main.scss */
+      /* line 150, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-home a:hover {
         background-color: #1a1a1a; }
-  /* line 151, main.scss */
+  /* line 160, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-options {
     background: #1a1a1a;
     height: 30px;
     position: absolute;
     top: 0px;
     right: 0px; }
-  /* line 159, main.scss */
+  /* line 168, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-toggle {
     float: left; }
-    /* line 163, main.scss */
+    /* line 172, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-toggle a {
       display: block;
       background-color: #1a1a1a;
@@ -153,16 +164,16 @@ html {
       text-indent: 200%;
       overflow: hidden;
       white-space: nowrap; }
-      /* line 174, main.scss */
+      /* line 183, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-toggle a:hover {
         background-color: #2b2b2b; }
-  /* line 181, main.scss */
+  /* line 190, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search {
     overflow: hidden;
     *zoom: 1;
     float: left;
     background: #1a1a1a; }
-  /* line 190, main.scss */
+  /* line 199, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search-submit {
     float: left;
     background-color: #1a1a1a;
@@ -177,11 +188,11 @@ html {
     text-indent: 200%;
     overflow: hidden;
     white-space: nowrap; }
-    /* line 202, main.scss */
+    /* line 211, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-submit:hover {
       cursor: pointer;
       background-color: #2b2b2b; }
-  /* line 210, main.scss */
+  /* line 219, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search-field {
     float: left;
     background-color: #1a1a1a;
@@ -193,49 +204,49 @@ html {
     height: 30px;
     display: none;
     /* hide in mobile view */ }
-    /* line 221, main.scss */
+    /* line 230, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-field::-webkit-input-placeholder {
       color: #fff; }
-    /* line 222, main.scss */
+    /* line 231, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-field:-moz-placeholder {
       color: #fff; }
-    /* line 223, main.scss */
+    /* line 232, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-field::-moz-placeholder {
       color: #fff; }
-    /* line 224, main.scss */
+    /* line 233, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-field:-ms-input-placeholder {
       color: #fff; }
-    /* line 226, main.scss */
+    /* line 235, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-search-field:focus {
       background-color: #2b2b2b; }
 
 @media screen and (min-width: 500px) {
-  /* line 238, main.scss */
+  /* line 247, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-links {
     overflow: auto; }
-    /* line 240, main.scss */
+    /* line 249, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links dl {
       width: 50%;
       float: left; }
-      /* line 243, main.scss */
+      /* line 252, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links dl:nth-child(3) {
         clear: both; }
-      /* line 244, main.scss */
+      /* line 253, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links dl dd, .ncstate-brand-bar .ncstate-brand-bar-links dl dt {
         padding-right: 3%; }
-  /* line 248, main.scss */
+  /* line 257, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-search-field {
     display: block; } }
 @media screen and (min-width: 800px) {
-  /* line 260, main.scss */
+  /* line 269, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-links dl {
     width: 25%;
     float: left; }
-    /* line 263, main.scss */
+    /* line 272, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links dl:nth-child(3) {
       clear: none; } }
 @media screen and (min-width: 1050px) {
-  /* line 273, main.scss */
+  /* line 282, main.scss */
   .ncstate-brand-bar .ncstate-brand-bar-home a {
     position: relative;
     left: -9px; } }
