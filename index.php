@@ -25,7 +25,7 @@
 			
 				<div class="ncstate-brand-bar-search" role="search" aria-label="Search www.ncsu.edu">
 					
-					<form action="http://ncsu.thompsonnetnc.org/search" name="navsearchform" class="ncstate-brand-bar-search-form">
+					<form action="http://ncsu.edu/search" name="navsearchform" class="ncstate-brand-bar-search-form">
         
 						<input id="navcx" name="cx" type="hidden" value="' + _bb.googleCustomSearchCode + '">
 					    <input id="navcof" name="cof" type="hidden" value="FORID:11">
