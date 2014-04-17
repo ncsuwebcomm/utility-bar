@@ -118,7 +118,7 @@ html { margin-top: 30px !important; }
 
 		&.is-hidden{
 		
-			@include translate(0, -115%);
+			@include translate(0, -100%);
 		
 		}
 		
@@ -333,7 +333,7 @@ html { margin-top: 30px !important; }
 			overflow: auto;
 			@include transition-duration(.4s);
 			dl{
-				width: 49%;
+				width: 50%;
 				display: inline-block;
 				&:nth-child(3){clear: both;}
 				dd,dt{padding-right: 3%;}
@@ -344,7 +344,7 @@ html { margin-top: 30px !important; }
 				width: 100%;
 				
 				li {
-					width: 49%;
+					width: 50%;
 					padding-right: 3%;
 				}
 			}
@@ -381,7 +381,7 @@ html { margin-top: 30px !important; }
 		.ncstate-brand-bar-links {
 			@include transition-duration(.3s);
 			dl{
-				width: 24%;
+				width: 25%;
 				display: inline-block;
 				padding: 0 1.5em;
 				vertical-align: top;
@@ -392,7 +392,7 @@ html { margin-top: 30px !important; }
 				padding-bottom: 0;
 				
 				li {
-					width: 24%;
+					width: 25%;
 					padding-right: 3%;
 				}
 			}

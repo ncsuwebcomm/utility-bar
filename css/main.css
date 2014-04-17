@@ -120,10 +120,10 @@ html {
     top: 30px; }
     /* line 119, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links.is-hidden {
-      -moz-transform: translate(0, -115%);
-      -ms-transform: translate(0, -115%);
-      -webkit-transform: translate(0, -115%);
-      transform: translate(0, -115%); }
+      -moz-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+      -webkit-transform: translate(0, -100%);
+      transform: translate(0, -100%); }
     /* line 127, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links ul.ncstate-brand-bar-primary-util li {
       display: inline-block;
@@ -308,7 +308,7 @@ html {
     transition-duration: 0.4s; }
     /* line 335, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links dl {
-      width: 49%;
+      width: 50%;
       display: inline-block; }
       /* line 338, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links dl:nth-child(3) {
@@ -322,7 +322,7 @@ html {
       width: 100%; }
       /* line 346, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links ul.ncstate-brand-bar-primary-util li {
-        width: 49%;
+        width: 50%;
         padding-right: 3%; }
     /* line 356, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links .ncstate-brand-bar-sec-util dl:last-child {
@@ -345,7 +345,7 @@ html {
     transition-duration: 0.3s; }
     /* line 383, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links dl {
-      width: 24%;
+      width: 25%;
       display: inline-block;
       padding: 0 1.5em;
       vertical-align: top; }
@@ -357,7 +357,7 @@ html {
       padding-bottom: 0; }
       /* line 394, main.scss */
       .ncstate-brand-bar .ncstate-brand-bar-links ul.ncstate-brand-bar-primary-util li {
-        width: 24%;
+        width: 25%;
         padding-right: 3%; }
     /* line 404, main.scss */
     .ncstate-brand-bar .ncstate-brand-bar-links .ncstate-brand-bar-sec-util dl:last-child {
