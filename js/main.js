@@ -17,7 +17,7 @@
 		if(classPattern.exec(toggleView.className)){
 			toggleView.className = toggleView.className.replace(classPattern,'');
 		} else {
-			toggleView.className = toggleView.className + ' is-hidden';
+			toggleView.className = toggleView.className + 'is-hidden';
 		}
 			
 	};
