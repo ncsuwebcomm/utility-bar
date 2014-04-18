@@ -67,7 +67,7 @@
 		
 		barjs.type = 'text/javascript';
 		barjs.async = true;
-		barjs.src = ('https:' === d.location.protocol ? 'http://ssl' : 'http://www') + '.webcommdev.com/utility/js/main.js';
+		barjs.src = 'https://cdn.ncsu.edu/brand-assets/utility-bar/js/main.js';
 		scripts.parentNode.insertBefore(barjs, scripts);
 		
 	}, false);
