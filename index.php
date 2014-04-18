@@ -9,7 +9,7 @@
 
 <body>
 	
-	<div class="ncstate-brand-bar">
+	<div class="ncstate-brand-bar" aria-label="NC State Brand Utility Bar">
 		
 		<div class="ncstate-brand-bar-tools">
 			<div class="ncstate-brand-bar-wrapper ncstate-brand-bar-wrapper-primary" id="ncstate-brand-bar-wrapper-primary">
