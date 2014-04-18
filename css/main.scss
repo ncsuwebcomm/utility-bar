@@ -12,7 +12,6 @@
 
 // color schemes
 
-// $color: red;
 $color: gray;
 
 $primary-color: #cc0000;
@@ -25,10 +24,6 @@ $highlight-color: darken($primary-color,3%);
 	$primary-color: #333;
 	$accent-color: darken($primary-color,10%);
 	$highlight-color: darken($primary-color,3%);
-//} @else if $color == white{
-//	$primary-color: #fff;
-//	$text-color: #cc0000;
-//	$link-color: #cc0000;
 } @else if $color == black{
 	$primary-color: #000;
 	$accent-color: lighten($primary-color,20%);
