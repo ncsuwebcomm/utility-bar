@@ -7,7 +7,7 @@
 		bar = d.createElement('div');
 	// add the styles for the brand bar
 	
-	_bb.color = _bb.color || 'red';
+	_bb.color = _bb.color || 'gray';
 	//_bb.searchDomain = _bb.searchDomain || '';
 	_bb.googleCustomSearchCode = _bb.googleCustomSearchCode || '005788656502990663686:7aklxhhhqw0';
 		
