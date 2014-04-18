@@ -10,11 +10,20 @@
 	_bb.color = _bb.color || 'gray';
 	//_bb.searchDomain = _bb.searchDomain || '';
 	_bb.googleCustomSearchCode = _bb.googleCustomSearchCode || '005788656502990663686:7aklxhhhqw0';
+
+	//Set up contains method on Array
+
+	Array.prototype.contains = function ( needle ) {
+		for (var i in this) {
+			if (this[i] === needle) {return true;}
+		}
+		return false;
+	};
 		
 	barcss.type = 'text/css';
 	barcss.media = 'all';
 	barcss.rel = 'stylesheet';
-	barcss.href = 'https://cdn.ncsu.edu/brand-assets/utility-bar/css/' + (['red','black','gray'].indexOf(_bb.color) ? 'main-' + _bb.color : 'main') +  '.css';
+	barcss.href = 'https://cdn.ncsu.edu/brand-assets/utility-bar/css/' + (['red','black','gray'].contains(_bb.color) ? 'main-' + _bb.color : 'main') +  '.css';
 	
 	d.head.appendChild(barcss);
 	
