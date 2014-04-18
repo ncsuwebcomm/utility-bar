@@ -103,10 +103,10 @@ html {
     background: #1a1a1a;
     padding: 0 10px;
     overflow: auto;
-    -moz-transition-property: translate;
-    -o-transition-property: translate;
-    -webkit-transition-property: translate;
-    transition-property: translate;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
