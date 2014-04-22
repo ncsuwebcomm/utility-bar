@@ -7,15 +7,14 @@
 		searchForm = d.getElementsByClassName('ncstate-brand-bar-search-form')[0],
 		searchField = d.getElementsByClassName('ncstate-brand-bar-search-field')[0],
 		classPattern = /\bis-hidden\b/g,
+		firstLink = d.getElementById('ncstate-brand-bar-first-link'),
 		toggleState = 'hidden';
 
 	// Define Event Handlers
-	
-	var handleToggleElement = function(e){
-		
-		e.preventDefault();
-		
-		if(classPattern.exec(toggleView.className)){
+
+	var toggleLinks = function() {
+
+		if(toggleState === 'hidden'){
 			toggleView.style.display = "block";
 			setTimeout(function(){toggleView.className = toggleView.className.replace(classPattern,'');}, 10);
 			toggleState = 'visible';
@@ -23,7 +22,31 @@
 			toggleView.className = toggleView.className + 'is-hidden';
 			toggleState = 'hidden';
 		}
+
+	};
+	
+	var handleToggleElement = function(e){
+		
+		e.preventDefault();
+		toggleLinks();
 			
+	};
+
+	var handleTabbedNavigation = function(e){
+
+		var key = e.which || e.keyCode;
+
+		if (key === 13) {
+			e.preventDefault();
+			toggleLinks();
+		}
+
+		if (toggleState === 'visible') {
+			e.preventDefault();
+			firstLink.focus();
+		} else {
+			toggleElm.focus();
+		}
 	};
 	
 	var handleSearchSubmit = function(e){
@@ -38,7 +61,7 @@
 
 	};
 
-	var handleTransitionEnd = function(e){
+	var handleTransitionEnd = function(){
 		
 		if(toggleState === 'hidden'){
 			toggleView.style.display = "none";
@@ -49,8 +72,9 @@
 	// Bind Event Handlers
 
 	toggleElm.addEventListener('click', handleToggleElement, false);
-	searchForm.addEventListener('submit', handleSearchSubmit, false);
+	toggleElm.addEventListener('keydown', handleTabbedNavigation, false);
 	toggleView.addEventListener('transitionend', handleTransitionEnd, false);
+	searchForm.addEventListener('submit', handleSearchSubmit, false);
 	
 	
 })(window,document);

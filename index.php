@@ -50,7 +50,7 @@
 			<div class="ncstate-brand-bar-wrapper">
 				
 				<ul class="ncstate-brand-bar-primary-util">
-					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-directory"><a href="http://www.ncsu.edu/directory/">Campus Directory</a></li>
+					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-brand-bar-first-link">Campus Directory</a></li>
 					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
 					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-map"><a href="http://www.ncsu.edu/campus_map/">Campus Map</a></li>
 					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
