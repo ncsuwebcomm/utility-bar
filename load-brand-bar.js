@@ -63,7 +63,13 @@
 		
 		bar.getElementsByTagName('form')[0].appendChild(inputDomain);
 		
-		d.getElementsByTagName('body')[0].appendChild(bar);
+		var parentOfBar = d.getElementsByTagName('body')[0];
+		if(d.getElementById('ncstate-brand-bar')){
+			parentOfBar = d.getElementById('ncstate-brand-bar');
+			d.getElementsByTagName('body')[0].replaceChild(bar, parentOfBar);
+		} else {
+			parentOfBar.insertBefore(bar, parentOfBar.firstChild);
+		}
 		
 		barjs.type = 'text/javascript';
 		barjs.async = true;
