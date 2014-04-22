@@ -63,7 +63,7 @@
 		
 		bar.getElementsByTagName('form')[0].appendChild(inputDomain);
 		
-		d.getElementsByTagName('html')[0].appendChild(bar);
+		d.getElementsByTagName('body')[0].appendChild(bar);
 		
 		barjs.type = 'text/javascript';
 		barjs.async = true;
