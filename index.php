@@ -9,32 +9,32 @@
 
 <body>
 	
-	<div class="ncstate-brand-bar" aria-label="NC State Brand Utility Bar">
+	<div class="ncstate-utility-bar" aria-label="NC State Brand Utility Bar">
 		
-		<div class="ncstate-brand-bar-tools">
-			<div class="ncstate-brand-bar-wrapper ncstate-brand-bar-wrapper-primary" id="ncstate-brand-bar-wrapper-primary">
+		<div class="ncstate-utility-bar-tools">
+			<div class="ncstate-utility-bar-wrapper ncstate-utility-bar-wrapper-primary" id="ncstate-utility-bar-wrapper-primary">
 			
-				<div class="ncstate-brand-bar-home">
+				<div class="ncstate-utility-bar-home">
 					<a href="http://www.ncsu.edu">NC State Home</a>
 				</div>
 
-				<div class="ncstate-brand-bar-options">
+				<div class="ncstate-utility-bar-options">
 
-					<div class="ncstate-brand-bar-toggle">
-						<a id="ncstate-brand-bar-toggle-link" href="#">Show/Hide Quicklinks</a>
+					<div class="ncstate-utility-bar-toggle">
+						<a id="ncstate-utility-bar-toggle-link" href="#">Show/Hide Quicklinks</a>
 					</div>
 				
-					<div class="ncstate-brand-bar-search" role="search" aria-label="Search www.ncsu.edu">
+					<div class="ncstate-utility-bar-search" role="search" aria-label="Search www.ncsu.edu">
 						
-						<form action="http://www.ncsu.edu/search" name="navsearchform" class="ncstate-brand-bar-search-form">
+						<form action="http://www.ncsu.edu/search" name="navsearchform" class="ncstate-utility-bar-search-form">
 	        
-							<input id="navcx" name="cx" type="hidden" value="' + _bb.googleCustomSearchCode + '">
+							<input id="navcx" name="cx" type="hidden" value="' + _ub.googleCustomSearchCode + '">
 						    <input id="navcof" name="cof" type="hidden" value="FORID:11">
 						    
-							<input class="ncstate-brand-bar-search-field" id="search-input" name="q" type="search"
+							<input class="ncstate-utility-bar-search-field" id="search-input" name="q" type="search"
 								placeholder="search ncsu.edu" aria-label="search ncsu.edu">
 						 	<input type="submit" id="search-submit" name="search-submit" value="search"
-								class="ncstate-brand-bar-search-submit">
+								class="ncstate-utility-bar-search-submit">
 				
 						</form>
 						
@@ -45,18 +45,18 @@
 			</div><!-- end util wrapper -->
 		</div><!-- end tools -->
 		
-		<div class="ncstate-brand-bar-links is-hidden">
+		<div class="ncstate-utility-bar-links is-hidden">
 		
-			<div class="ncstate-brand-bar-wrapper">
+			<div class="ncstate-utility-bar-wrapper">
 				
-				<ul class="ncstate-brand-bar-primary-util">
-					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-brand-bar-first-link">Campus Directory</a></li>
-					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
-					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-map"><a href="http://www.ncsu.edu/campus_map/">Campus Map</a></li>
-					<li class="ncstate-brand-bar-primary-util ncstate-brand-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
+				<ul class="ncstate-utility-bar-primary-util">
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://www.ncsu.edu/campus_map/">Campus Map</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
 				</ul>
 				
-				<div class="ncstate-brand-bar-sec-util">	
+				<div class="ncstate-utility-bar-sec-util">	
 					<dl>
 						<dt>Campus Resources</dt>
 						<dd>

@@ -2,12 +2,12 @@
 	
 	"use strict";
 	
-	var toggleElm = d.getElementById('ncstate-brand-bar-toggle-link'),
-		toggleView = d.getElementsByClassName('ncstate-brand-bar-links')[0],
-		searchForm = d.getElementsByClassName('ncstate-brand-bar-search-form')[0],
-		searchField = d.getElementsByClassName('ncstate-brand-bar-search-field')[0],
+	var toggleElm = d.getElementById('ncstate-utility-bar-toggle-link'),
+		toggleView = d.getElementsByClassName('ncstate-utility-bar-links')[0],
+		searchForm = d.getElementsByClassName('ncstate-utility-bar-search-form')[0],
+		searchField = d.getElementsByClassName('ncstate-utility-bar-search-field')[0],
 		classPattern = /\bis-hidden\b/g,
-		firstLink = d.getElementById('ncstate-brand-bar-first-link'),
+		firstLink = d.getElementById('ncstate-utility-bar-first-link'),
 		toggleState = 'hidden';
 
 	// Define Event Handlers

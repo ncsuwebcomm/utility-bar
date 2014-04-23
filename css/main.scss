@@ -35,7 +35,7 @@ html { margin-top: 30px !important; }
 
 // main Styles 
 
-.ncstate-brand-bar {
+.ncstate-utility-bar {
 
 	// Eric Meyer reset 
 	
@@ -70,7 +70,7 @@ html { margin-top: 30px !important; }
 		text-decoration: none;
 	}
 
-	.ncstate-brand-bar-tools {
+	.ncstate-utility-bar-tools {
 		position: absolute;
 		top: 0px;
 		left: 0px;
@@ -85,21 +85,21 @@ html { margin-top: 30px !important; }
 
 	// main bar wrappers
 
-	.ncstate-brand-bar-wrapper{
+	.ncstate-utility-bar-wrapper{
 		max-width: 960px;
 		width: 100%;
 		margin: 0px auto;
 		padding: 0%;
 	}
 
-	.ncstate-brand-bar-wrapper-primary{
+	.ncstate-utility-bar-wrapper-primary{
 		height: 30px;
 		position: relative;
 	}
 	
 	// resources container
 	
-	.ncstate-brand-bar-links{
+	.ncstate-utility-bar-links{
 		
 		background: $accent-color;
 		padding: 0 10px;
@@ -118,7 +118,7 @@ html { margin-top: 30px !important; }
 		
 		}
 		
-		ul.ncstate-brand-bar-primary-util {
+		ul.ncstate-utility-bar-primary-util {
 			
 			li {
 				display: inline-block;
@@ -134,7 +134,7 @@ html { margin-top: 30px !important; }
 					display: none;
 				}
 				
-				&.ncstate-brand-bar-directory {
+				&.ncstate-utility-bar-directory {
 					background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiAjZmZmOyIgIGQ9Ik03MS44NTcsODEuNjcyYzEyLjk0MSwwLDIzLjQzNS0xMi41MzcsMjMuNDM1LTI4LjAwMmMwLTE1LjQ2Ny0xMC40OTMtMjguMDAzLTIzLjQzNS0yOC4wMDNTNDguNDIzLDM4LjIwMyw0OC40MjMsNTMuNjcKCQlDNDguNDIzLDY5LjEzNSw1OC45MTYsODEuNjcyLDcxLjg1Nyw4MS42NzJ6IE04Ny4yMTUsODYuODA1Yy00LjU4OCwyLjc2OS05LjgxMiw0LjM0Ni0xNS4zNTcsNC4zNDYKCQljLTUuNjc0LDAtMTEuMDE4LTEuNjQ0LTE1LjY4My00LjUzNWwtMzcuMjU2LDEwLjQ3djE5LjcyMmgxMDUuODc3Vjk3LjA4NUw4Ny4yMTUsODYuODA1eiIvPgo8L2c+Cjwvc3ZnPgo=);
 					background-repeat: no-repeat;
 					background-position: left 20px;
@@ -142,7 +142,7 @@ html { margin-top: 30px !important; }
 					padding-left: 3em;					
 				}
 				
-				&.ncstate-brand-bar-mypack {
+				&.ncstate-utility-bar-mypack {
 					background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjZmZmOyIgcG9pbnRzPSIxMjUuMDgxLDQ3Ljg0NCAxMjUuMDgxLDI1LjkxNSA3OC4wNDEsMjUuOTE1IDc4LjA0MSwzNS42NjcgODQuODg1LDQ3Ljg0NCAJCSIvPgoJCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjZmZmOyIgcG9pbnRzPSI2Ny43NTUsNDMuMTEgMTguOTE5LDQzLjExIDE4LjkxOSwxMTcuMDg1IDEyNS4wODEsMTE3LjA4NSAxMjUuMDgxLDYwLjQ1NyA3Ny41MDUsNjAuNDU3IAkJIi8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg==);
 					background-repeat: no-repeat;
 					background-position: left 20px;
@@ -150,7 +150,7 @@ html { margin-top: 30px !important; }
 					padding-left: 3em;
 				}
 				
-				&.ncstate-brand-bar-map {
+				&.ncstate-utility-bar-map {
 					background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwb2x5Z29uIHBvaW50cz0iOTAuODIxLDg1LjE5OSA5MC44MjEsNjcuNTUyIDc3Ljg4MSw4NS4xOTkgCSIvPgo8L2c+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6ICNmZmY7IiAgZD0iTTczLjQ4NCwxMTkuMDg1YzAsMCwyOS44MTItNDAuNTM3LDI5LjgxMi02NC40NzRjMC04LjIyNy0zLjIwMi0xNS45NTktOS4wMTktMjEuNzc1CgkJQzg4LjQ2LDI3LjAyLDgwLjcyNywyMy44MTQsNzIuNSwyMy44MTVjLTguMjI2LTAuMDAxLTE1Ljk2LDMuMjAzLTIxLjc3NSw5LjAyMWMtNS44MTcsNS44MTYtOS4wMjEsMTMuNTQ5LTkuMDIxLDIxLjc3NQoJCWMwLDI3LjIsMjkuODExLDY0LjQ3NCwyOS44MTEsNjQuNDc0SDczLjQ4NHogTTU1LjQ1OSw1NC42MTJjMC00LjU1MiwxLjc3Mi04LjgzMyw0Ljk5My0xMi4wNTIKCQljMy4yMTktMy4yMjEsNy40OTctNC45OTQsMTIuMDQ4LTQuOTk0YzQuNTUzLDAsOC44MzIsMS43NzEsMTIuMDUsNC45OTJjMy4yMTgsMy4yMTgsNC45ODksNy40OTgsNC45OTEsMTIuMDUxCgkJYzAsNC41NTQtMS43NzIsOC44MzMtNC45OTMsMTIuMDUzYy0zLjIxOCwzLjIyMS03LjQ5Nyw0Ljk5NC0xMi4wNDksNC45OTRjLTQuNTUzLDAtOC44MzEtMS43NzEtMTIuMDQ5LTQuOTkxCgkJQzU3LjIyOSw2My40NDcsNTUuNDU5LDU5LjE2Niw1NS40NTksNTQuNjEyeiIvPgo8L2c+Cjwvc3ZnPgo=);
 					background-repeat: no-repeat;
 					background-position: left 20px;
@@ -158,7 +158,7 @@ html { margin-top: 30px !important; }
 					padding-left: 3em;
 				}
 				
-				&.ncstate-brand-bar-calendar {
+				&.ncstate-utility-bar-calendar {
 					background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjZmZmOyIgcG9pbnRzPSI5MC44MjEsODUuMTk5IDkwLjgyMSw2Ny41NTIgNzcuODgxLDg1LjE5OSAJIi8+Cgk8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiICBkPSJNMTEwLjkzMiwzOS40MDNWMjUuNjY3SDk5LjU3OXYxMy43MzZINzcuNzY2VjI1LjY2N0g2Ni40MTN2MTMuNzM2SDQ0LjZWMjUuNjY3SDMzLjI0OHYxMy43MzZIMjEuMXY3Ny42ODJoMTAxLjk4MVYzOS40MDMKCQlIMTEwLjkzMnogTTU3Ljg3OSwxMDEuNjA5SDQ1LjkyOFY2OS43MTljLTMuMjgyLDIuNzI1LTguNDIxLDQuNzctMTAuNDY1LDUuMzI1di05LjUzNWM0Ljk1NC0xLjU0OCw3LjgwMi0yLjkxLDEyLjM4NS02Ljg3M2gxMC4wMzEKCQlWMTAxLjYwOXogTTEwOC43MTgsOTMuMDYzaC02LjkzNnY4LjU0Nkg5MC42Mzd2LTguNTQ2SDY5Ljg5MlY4Mi45N2wxOC4xNDQtMjQuNTIxaDEzLjc0NnYyNi43NWg2LjkzNlY5My4wNjN6Ii8+CjwvZz4KPC9zdmc+Cg==);
 					background-repeat: no-repeat;
 					background-position: left 20px;
@@ -168,7 +168,7 @@ html { margin-top: 30px !important; }
 			}
 		}
 		
-		.ncstate-brand-bar-sec-util {
+		.ncstate-utility-bar-sec-util {
 			padding: 1.5em 0;
 			padding-bottom: 0.5em;
 			dl {
@@ -194,7 +194,7 @@ html { margin-top: 30px !important; }
 				ul li:before {display: none;}
 				text-transform: uppercase;
 				
-				&.ncstate-brand-bar-primary-util {
+				&.ncstate-utility-bar-primary-util {
 					margin-bottom: 1.5em;
 					text-transform: none;
 				}
@@ -213,7 +213,7 @@ html { margin-top: 30px !important; }
 
 	// Home button
 		
-	.ncstate-brand-bar-home{
+	.ncstate-utility-bar-home{
 	
 		float: left;
 	
@@ -237,7 +237,7 @@ html { margin-top: 30px !important; }
 
 	// Search/toggle container
 	
-	.ncstate-brand-bar-options{
+	.ncstate-utility-bar-options{
 		background: $accent-color;
 		height: 30px;
 		position: absolute;
@@ -245,7 +245,7 @@ html { margin-top: 30px !important; }
 		right: 0px;
 	}
 
-	.ncstate-brand-bar-toggle{
+	.ncstate-utility-bar-toggle{
 	
 		float: left;
 	
@@ -268,7 +268,7 @@ html { margin-top: 30px !important; }
 	
 	}
 	
-	.ncstate-brand-bar-search{
+	.ncstate-utility-bar-search{
 	
 		@include clearfix;
 	
@@ -277,7 +277,7 @@ html { margin-top: 30px !important; }
 	
 	}
 	
-	.ncstate-brand-bar-search-submit{
+	.ncstate-utility-bar-search-submit{
 		
 		float: left;
 		background-color: $accent-color;
@@ -298,7 +298,7 @@ html { margin-top: 30px !important; }
 		@include hideText;
 	}
 	
-	.ncstate-brand-bar-search-field{
+	.ncstate-utility-bar-search-field{
 		float: left;
 		background-color: $accent-color;
 		border: none;
@@ -324,9 +324,9 @@ html { margin-top: 30px !important; }
 
 @media screen and (min-width: 500px) {
 	
-	.ncstate-brand-bar {
+	.ncstate-utility-bar {
 		
-		.ncstate-brand-bar-links{
+		.ncstate-utility-bar-links{
 			overflow: auto;
 			@include transition-duration(.4s);
 			dl{
@@ -336,7 +336,7 @@ html { margin-top: 30px !important; }
 				dd,dt{padding-right: 3%;}
 			}
 			
-			ul.ncstate-brand-bar-primary-util {
+			ul.ncstate-utility-bar-primary-util {
 				padding-bottom: 1.5em;
 				width: 100%;
 				
@@ -348,7 +348,7 @@ html { margin-top: 30px !important; }
 
 
 
-			.ncstate-brand-bar-sec-util {
+			.ncstate-utility-bar-sec-util {
 				dl {
 					&:last-child {
 						padding-top: 1.5em;
@@ -363,7 +363,7 @@ html { margin-top: 30px !important; }
 			}
 		}
 	
-		.ncstate-brand-bar-search-field{
+		.ncstate-utility-bar-search-field{
 			display: block;
 		}
 	
@@ -373,9 +373,9 @@ html { margin-top: 30px !important; }
 
 @media screen and (min-width: 800px) {
 	
-	.ncstate-brand-bar {
+	.ncstate-utility-bar {
 		
-		.ncstate-brand-bar-links {
+		.ncstate-utility-bar-links {
 			@include transition-duration(.3s);
 			dl{
 				width: 25%;
@@ -385,7 +385,7 @@ html { margin-top: 30px !important; }
 				&:nth-child(3){clear: none;}
 			}
 			
-			ul.ncstate-brand-bar-primary-util {
+			ul.ncstate-utility-bar-primary-util {
 				padding-bottom: 0;
 				
 				li {
@@ -396,7 +396,7 @@ html { margin-top: 30px !important; }
 
 
 
-		.ncstate-brand-bar-sec-util {
+		.ncstate-utility-bar-sec-util {
 			padding-bottom: 2em;
 			dl {
 				&:last-child {
