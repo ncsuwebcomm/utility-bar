@@ -74,7 +74,7 @@
 						<dt>Academic Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="http://admissions.ncsu.edu/">Admissions</a></li>
+								<li><a href="http://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
 								<li><a href="http://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
 								<li><a href="https://wolfware.ncsu.edu/">Wolfware</a></li>
 								<li><a href="http://oia.ncsu.edu/">International Affairs</a></li>
@@ -89,9 +89,9 @@
 							<ul>
 								<li><a href="http://www.fis.ncsu.edu/cashier/">Cashier's Office</a></li>
 								<li><a href="http://www.ncsu.edu/registrar/">Registration and Records</a></li>
-								<li><a href="http://www7.acs.ncsu.edu/financial_aid/">Financial Aid &amp; Scholarships</a></li>
+								<li><a href="http://www7.acs.ncsu.edu/financial_aid/">Financial Aid and Scholarships</a></li>
 								<li><a href="http://www.ncsu.edu/outreach/">Outreach and Engagement</a></li>
-								<li><a href="http://help.ncsu.edu/">IT Help Desk</a></li>
+								<li><a href="http://help.ncsu.edu/">NC State Help Desk</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -104,7 +104,7 @@
 								<li><a href="http://news.ncsu.edu/">NC State News</a></li>
 								<li><a href="http://www.ncsu.edu/grad/">Graduate School</a></li>
 								<li><a href="http://gmail.ncsu.edu/">Gmail Access</a></li>
-								<li><a href="#" title="Social Media Website Coming Soon">Social Media</a></li>
+								<li><a href="#" disabled title="Social Media Website Coming Soon">Social Media</a></li>
 							</ul>
 						</dd>
 					</dl>
