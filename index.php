@@ -76,7 +76,7 @@
 							<ul>
 								<li><a href="http://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
 								<li><a href="http://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
-								<li><a href="https://wolfware.ncsu.edu/">Wolfware</a></li>
+								<li><a href="https://wolfware.ncsu.edu/">WolfWare</a></li>
 								<li><a href="http://oia.ncsu.edu/">International Affairs</a></li>
 								<li><a href="http://distance.ncsu.edu/">Distance Education</a></li>
 							</ul>
