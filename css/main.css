@@ -19,9 +19,9 @@ html {
   font-family: Univers, arial, sans-serif;
   font-size: 14px;
   line-height: 1;
-  z-index: 1000 !important;
+  z-index: 9997 !important;
   overflow: visible; }
-  /* line 5, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 5, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar html, .ncstate-utility-bar body, .ncstate-utility-bar div, .ncstate-utility-bar span, .ncstate-utility-bar applet, .ncstate-utility-bar object, .ncstate-utility-bar iframe,
   .ncstate-utility-bar h1, .ncstate-utility-bar h2, .ncstate-utility-bar h3, .ncstate-utility-bar h4, .ncstate-utility-bar h5, .ncstate-utility-bar h6, .ncstate-utility-bar p, .ncstate-utility-bar blockquote, .ncstate-utility-bar pre,
   .ncstate-utility-bar a, .ncstate-utility-bar abbr, .ncstate-utility-bar acronym, .ncstate-utility-bar address, .ncstate-utility-bar big, .ncstate-utility-bar cite, .ncstate-utility-bar code,
@@ -41,32 +41,32 @@ html {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline; }
-  /* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 22, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar html {
     line-height: 1; }
-  /* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar ol, .ncstate-utility-bar ul {
     list-style: none; }
-  /* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 26, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar table {
     border-collapse: collapse;
     border-spacing: 0; }
-  /* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 28, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar caption, .ncstate-utility-bar th, .ncstate-utility-bar td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle; }
-  /* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 30, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar q, .ncstate-utility-bar blockquote {
     quotes: none; }
-    /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+    /* line 103, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
     .ncstate-utility-bar q:before, .ncstate-utility-bar q:after, .ncstate-utility-bar blockquote:before, .ncstate-utility-bar blockquote:after {
       content: "";
       content: none; }
-  /* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 32, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar a img {
     border: none; }
-  /* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 116, ../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar article, .ncstate-utility-bar aside, .ncstate-utility-bar details, .ncstate-utility-bar figcaption, .ncstate-utility-bar figure, .ncstate-utility-bar footer, .ncstate-utility-bar header, .ncstate-utility-bar hgroup, .ncstate-utility-bar main, .ncstate-utility-bar menu, .ncstate-utility-bar nav, .ncstate-utility-bar section, .ncstate-utility-bar summary {
     display: block; }
   /* line 46, main.scss */
@@ -90,7 +90,7 @@ html {
     right: 0px;
     width: 100%;
     height: 30px;
-    z-index: 1002;
+    z-index: 9999;
     background: #333333; }
   /* line 93, main.scss */
   .ncstate-utility-bar .ncstate-utility-bar-wrapper {
@@ -119,7 +119,7 @@ html {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
-    z-index: 1001;
+    z-index: 9998;
     position: relative;
     top: 30px;
     display: none; }
