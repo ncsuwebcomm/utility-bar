@@ -34,9 +34,9 @@
 		headStyle.type = 'text/css';
 		
 		if(!!(window.attachEvent && !window.opera)) {
-			headStyle.styleSheet.cssText = '.ncstate-utility-bar .ncstate-utility-bar-wrapper{ max-width: ' + _ub.maxWidth + 'px !important; }';
+			headStyle.styleSheet.cssText = '.ncstate-utility-bar .ncstate-utility-bar-wrapper{ width: 100% !important; max-width: ' + _ub.maxWidth + 'px !important; }';
 		} else {
-			var styleText = document.createTextNode('.ncstate-utility-bar .ncstate-utility-bar-wrapper{ max-width: ' + _ub.maxWidth + 'px !important; }');
+			var styleText = document.createTextNode('.ncstate-utility-bar .ncstate-utility-bar-wrapper{ width: 100% !important; max-width: ' + _ub.maxWidth + 'px !important; }');
 			headStyle.appendChild(styleText);
 		}
 		

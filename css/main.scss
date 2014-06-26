@@ -10,9 +10,26 @@
 	white-space: nowrap;
 }
 
+// Centered container element
+@mixin container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (30px / 2);
+  padding-right: (30px / 2);
+  // Bootstrap's clearfix
+	  &:before,
+	  &:after {
+	    content: " "; // 1
+	    display: table; // 2
+	  }
+	  &:after {
+	    clear: both;
+	  }
+}
+
 // color schemes
 
-$color: gray;
+$color: black;
 
 $primary-color: #cc0000;
 $text-color: #ffffff;
@@ -91,10 +108,17 @@ html { margin-top: 30px !important; }
 	// main bar wrappers
 
 	.ncstate-utility-bar-wrapper{
-		max-width: 960px;
-		width: 100%;
-		margin: 0px auto;
-		padding: 0%;
+		@include container-fixed();
+
+		@media (min-width: 768px) {
+		    width: 750px;
+		}
+		@media (min-width: 996px) {
+		    width: 970px;
+		}
+		@media (min-width: 1200px) {
+		    width: 1170px;
+		}
 	}
 
 	.ncstate-utility-bar-wrapper-primary{
