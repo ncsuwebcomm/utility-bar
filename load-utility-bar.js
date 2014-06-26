@@ -22,7 +22,7 @@
 	barcss.type = 'text/css';
 	barcss.media = 'all';
 	barcss.rel = 'stylesheet';
-	barcss.href = 'https://cdn.ncsu.edu/brand-assets/utility-bar/css/' + (['red','black','gray'].contains(_ub.color) ? 'main-' + _ub.color : 'main') +  '.css';
+	barcss.href = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/css/' + (['red','black','gray'].contains(_ub.color) ? 'main-' + _ub.color : 'main') +  '.css';
 	
 	d.head.appendChild(barcss);
 	
@@ -65,7 +65,7 @@
 		
 		barjs.type = 'text/javascript';
 		barjs.async = true;
-		barjs.src = 'https://cdn.ncsu.edu/brand-assets/utility-bar/js/main.js';
+		barjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/js/main.js';
 		scripts.parentNode.insertBefore(barjs, scripts);
 		
 	}, false);
