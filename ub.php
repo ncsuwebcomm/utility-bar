@@ -3,15 +3,15 @@
 var _ub = _ub || {};
 	
 <?php if(isset($_GET['googleCustomSearchCode']) || strlen($_GET['googleCustomSearchCode']) > 0): ?>
-	_ub.googleCustomSearchCode = '<?php echo htmlspecialchars($_GET['googleCustomSearchCode']); ?>';
+	_ub.googleCustomSearchCode = '<?php echo urlencode($_GET['googleCustomSearchCode']); ?>';
 <?php endif; ?>
 
 <?php if(isset($_GET['color']) || strlen($_GET['color']) > 0): ?>
-	_ub.color = '<?php echo htmlspecialchars($_GET['color']); ?>';
+	_ub.color = '<?php echo urlencode($_GET['color']); ?>';
 <?php endif; ?>
 
 <?php if(isset($_GET['maxWidth']) || strlen($_GET['maxWidth']) > 0): ?>
-	_ub.maxWidth = '<?php echo htmlspecialchars($_GET['maxWidth']); ?>';
+	_ub.maxWidth = '<?php echo urlencode($_GET['maxWidth']); ?>';
 <?php endif; ?>
 
 (function(){
