@@ -109,7 +109,7 @@ html {
       /* line 110, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-wrapper {
         width: 750px; } }
-    @media (min-width: 996px) {
+    @media (min-width: 992px) {
       /* line 110, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-wrapper {
         width: 970px; } }
