@@ -62,7 +62,7 @@
 						<dd>
 							<ul>
 								<li><a href="http://housing.ncsu.edu/">University Housing</a></li>
-								<li><a href="http://www.ncsudining.com/">Univeristy Dining</a></li>
+								<li><a href="http://www.ncsudining.com/">University Dining</a></li>
 								<li><a href="http://shop.bookstore.ncsu.edu/">Bookstores</a></li>
 								<li><a href="http://ncsu.transloc.com/">Wolfline Buses</a></li>
 								<li><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
