@@ -334,6 +334,8 @@ html { margin-top: 30px !important; }
 	
 	.ncstate-utility-bar-search-field{
 		float: left;
+		@include border-radius(0px); /* Make corners not round */
+		-webkit-appearance: none; /* Make corners not round */
 		background-color: $accent-color;
 		border: none;
 		color: #fff;
