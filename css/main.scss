@@ -341,7 +341,11 @@ html { margin-top: 30px !important; }
 		padding: 6px;
 		text-align: center;
 		height: 30px;
-		display: none; /* hide in mobile view */
+		/* Make form hidden dropdown in mobile */
+		display: none;
+		position: absolute;
+		top: 30px;
+		right: 0;
 		
 		&::-webkit-input-placeholder{color: #fff;}
 		&:-moz-placeholder{color: #fff;}
@@ -399,6 +403,9 @@ html { margin-top: 30px !important; }
 	
 		.ncstate-utility-bar-search-field{
 			display: block;
+			position: static;
+			top: auto;
+			right: auto;
 		}
 	
 	}
