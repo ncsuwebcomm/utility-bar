@@ -254,7 +254,8 @@ html { margin-top: 30px !important; }
 			background-size: 1.2em;
 			fill: #fff;
 			display: block;
-			padding: 9px 14px 7px 28px;
+			padding: 8px 14px 8px 28px;
+			line-height: 14px;
 		
 			&:hover{
 				background-color: $accent-color;
@@ -285,7 +286,7 @@ html { margin-top: 30px !important; }
 			background-repeat: no-repeat;
 			background-position-x: 90%;
 			background-position-y: 50%;
-			background-size: 20px;
+			background-size: 1.78572em;
 			width: 120px;
 			height: 30px;
 			text-transform: uppercase;
