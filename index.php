@@ -21,7 +21,7 @@
 				<div class="ncstate-utility-bar-options">
 
 					<div class="ncstate-utility-bar-toggle">
-						<a id="ncstate-utility-bar-toggle-link" href="#">Show/Hide Quicklinks</a>
+						<a id="ncstate-utility-bar-toggle-link" aria-label="Toggle resources" href="#">Resources</a>
 					</div>
 				
 					<div class="ncstate-utility-bar-search" role="search" aria-label="Search www.ncsu.edu">
@@ -48,7 +48,7 @@
 		<div class="ncstate-utility-bar-links is-hidden">
 		
 			<div class="ncstate-utility-bar-wrapper">
-				
+
 				<ul class="ncstate-utility-bar-primary-util">
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
@@ -56,7 +56,7 @@
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
 				</ul>
 				
-				<div class="ncstate-utility-bar-sec-util">	
+				<div class="ncstate-utility-bar-sec-util">
 					<dl>
 						<dt>Campus Resources</dt>
 						<dd>
