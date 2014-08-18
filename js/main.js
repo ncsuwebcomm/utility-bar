@@ -56,6 +56,7 @@
 		
 		if(display === "none"){
 			e.preventDefault();
+			toggleElm.parentNode.className = toggleElm.parentNode.className + " is-collapsed";
 			searchField.style.display = 'block';
 		}
 
