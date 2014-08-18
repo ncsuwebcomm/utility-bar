@@ -299,22 +299,6 @@ html { margin-top: 30px !important; }
 				background-color: $accent-color;
 			}
 		}
-
-		&.is-collapsed {
-			a{
-			background-color: $accent-color;
-			background-position: center;
-			width: 30px;
-			padding: 0;
-			border: none;
-		
-			@include hideText;
-		
-			&:hover{
-				background-color: $highlight-color;
-			}
-		}
-		}
 	
 	}
 	
