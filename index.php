@@ -53,7 +53,7 @@
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://maps.ncsu.edu/">Campus Map</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
 				</ul>
 				
 				<div class="ncstate-utility-bar-sec-util">
@@ -65,7 +65,7 @@
 								<li><a href="http://www.ncsudining.com/">University Dining</a></li>
 								<li><a href="http://shop.bookstore.ncsu.edu/">Bookstores</a></li>
 								<li><a href="http://ncsu.transloc.com/">Wolfline Buses</a></li>
-								<li><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
+								<li><a href="http://www.ncsu.edu/calendars">Calendar</a></li>
 							</ul>
 						</dd>
 					</dl>
