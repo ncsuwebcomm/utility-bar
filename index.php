@@ -89,7 +89,7 @@
 							<ul>
 								<li><a href="http://www.fis.ncsu.edu/cashier/">Cashier's Office</a></li>
 								<li><a href="http://www.ncsu.edu/registrar/">Registration and Records</a></li>
-								<li><a href="http://www7.acs.ncsu.edu/financial_aid/">Financial Aid and Scholarships</a></li>
+								<li><a href="http://financialaid.ncsu.edu/">Scholarships and Financial Aid</a></li>
 								<li><a href="http://www.ncsu.edu/outreach/">Outreach and Engagement</a></li>
 								<li><a href="http://help.ncsu.edu/">NC State Help Desk</a></li>
 							</ul>
