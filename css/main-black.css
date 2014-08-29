@@ -336,77 +336,93 @@ html {
     /* line 357, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-search-field:focus {
       background-color: #1a1a1a; }
+      /* line 359, main.scss */
+      .ncstate-utility-bar .ncstate-utility-bar-search-field:focus::-webkit-input-placeholder {
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+      /* line 360, main.scss */
+      .ncstate-utility-bar .ncstate-utility-bar-search-field:focus:-moz-placeholder {
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+      /* line 361, main.scss */
+      .ncstate-utility-bar .ncstate-utility-bar-search-field:focus::-moz-placeholder {
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+      /* line 362, main.scss */
+      .ncstate-utility-bar .ncstate-utility-bar-search-field:focus:-ms-input-placeholder {
+        transition: opacity 0.5s ease;
+        opacity: 0; }
 
 @media screen and (min-width: 500px) {
-  /* line 369, main.scss */
+  /* line 375, main.scss */
   .ncstate-utility-bar .ncstate-utility-bar-links {
     overflow: auto;
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s; }
-    /* line 372, main.scss */
+    /* line 378, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links dl {
       width: 50%;
       display: inline-block; }
-      /* line 375, main.scss */
+      /* line 381, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links dl:nth-child(3) {
         clear: both; }
-      /* line 376, main.scss */
+      /* line 382, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links dl dd, .ncstate-utility-bar .ncstate-utility-bar-links dl dt {
         padding-right: 3%; }
-    /* line 379, main.scss */
+    /* line 385, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links ul.ncstate-utility-bar-primary-util {
       padding-bottom: 1.5em;
       width: 100%; }
-      /* line 383, main.scss */
+      /* line 389, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links ul.ncstate-utility-bar-primary-util li {
         width: 50%;
         padding-right: 3%; }
-    /* line 393, main.scss */
+    /* line 399, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links .ncstate-utility-bar-sec-util dl:last-child {
       padding-top: 1.5em; }
-      /* line 395, main.scss */
+      /* line 401, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links .ncstate-utility-bar-sec-util dl:last-child dt {
         display: block; }
-    /* line 399, main.scss */
+    /* line 405, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links .ncstate-utility-bar-sec-util dl:nth-child(3) {
       padding-bottom: 1.5em; }
-  /* line 406, main.scss */
+  /* line 412, main.scss */
   .ncstate-utility-bar .ncstate-utility-bar-search-field {
     display: block;
     position: static;
     top: auto;
     right: auto; } }
 @media screen and (min-width: 800px) {
-  /* line 421, main.scss */
+  /* line 427, main.scss */
   .ncstate-utility-bar .ncstate-utility-bar-links {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    /* line 423, main.scss */
+    /* line 429, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links dl {
       width: 25%;
       display: inline-block;
       padding: 0 1.5em;
       vertical-align: top; }
-      /* line 428, main.scss */
+      /* line 434, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links dl:nth-child(3) {
         clear: none; }
-    /* line 431, main.scss */
+    /* line 437, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links ul.ncstate-utility-bar-primary-util {
       padding-bottom: 0; }
-      /* line 434, main.scss */
+      /* line 440, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links ul.ncstate-utility-bar-primary-util li {
         width: 25%;
         padding-right: 3%; }
-    /* line 442, main.scss */
+    /* line 448, main.scss */
     .ncstate-utility-bar .ncstate-utility-bar-links .ncstate-utility-bar-sec-util {
       padding-bottom: 2em; }
-      /* line 445, main.scss */
+      /* line 451, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links .ncstate-utility-bar-sec-util dl:last-child {
         padding-top: 0; }
-      /* line 448, main.scss */
+      /* line 454, main.scss */
       .ncstate-utility-bar .ncstate-utility-bar-links .ncstate-utility-bar-sec-util dl:nth-child(3) {
         padding-bottom: 0; } }

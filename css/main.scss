@@ -354,7 +354,13 @@ html { margin-top: 30px !important; }
 		&::-moz-placeholder{color: #fff;}
 		&:-ms-input-placeholder{color: #fff;}
 		
-		&:focus{ background-color: $highlight-color; }
+		&:focus{ 
+			background-color: $highlight-color;
+			&::-webkit-input-placeholder{transition: opacity 0.5s ease; opacity: 0;}
+			&:-moz-placeholder{transition: opacity 0.5s ease; opacity: 0;}
+			&::-moz-placeholder{transition: opacity 0.5s ease; opacity: 0;}
+			&:-ms-input-placeholder{transition: opacity 0.5s ease; opacity: 0;} 
+		}
 	}
 	
 }
