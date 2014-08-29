@@ -52,7 +52,7 @@
 				<ul class="ncstate-utility-bar-primary-util">
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://www.ncsu.edu/campus_map/">Campus Map</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://maps.ncsu.edu/">Campus Map</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-calendar"><a href="http://www.ncsu.edu/calendar/">Calendar</a></li>
 				</ul>
 				
