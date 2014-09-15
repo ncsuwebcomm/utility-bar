@@ -31,20 +31,29 @@
 
 $color: black;
 
-$primary-color: #cc0000;
-$text-color: #ffffff;
-$link-color: #999999;
-$accent-color: darken($primary-color,10%);
-$highlight-color: darken($primary-color,3%);
+	$primary-color: #000;
+	$accent-color: lighten($primary-color,20%);
+	$highlight-color: lighten($primary-color,10%);
+	$text-color: #ffffff;
+	$link-color: #999999;
+	$search-txt: $text-color;
+	$search-bg: $accent-color;
+	$search-highlight: $highlight-color;
 
 @if $color == gray{
 	$primary-color: #333;
 	$accent-color: darken($primary-color,10%);
 	$highlight-color: darken($primary-color,3%);
-} @else if $color == black{
-	$primary-color: #000;
-	$accent-color: lighten($primary-color,20%);
-	$highlight-color: lighten($primary-color,10%);
+	$search-txt: #000;
+	$search-bg: #ccc;
+	$search-highlight: #aaa;
+} @else if $color == red{
+	$primary-color: #cc0000;
+	$accent-color: darken($primary-color,10%);
+	$highlight-color: darken($primary-color,3%);
+	$search-txt: #000;
+	$search-bg: #ccc;
+	$search-highlight: #aaa;
 }
 
 html { margin-top: 30px !important; }
@@ -57,6 +66,12 @@ html { margin-top: 30px !important; }
 	// Eric Meyer reset 
 	
 	@include global-reset;
+	input,
+	button {
+	  font-family: inherit;
+	  font-size: inherit;
+	  line-height: inherit;
+	}
 	
 	// use border-box-sizing
 	
@@ -252,7 +267,6 @@ html { margin-top: 30px !important; }
 			background-repeat: no-repeat;
 			background-position: left;
 			background-size: 1.2em;
-			fill: #fff;
 			display: block;
 			padding: 8px 14px 8px 28px;
 			line-height: 14px;
@@ -293,7 +307,6 @@ html { margin-top: 30px !important; }
 			line-height: 14px;
 			letter-spacing: 0.02em;
 			padding: 8px 13px;
-			border-right: 2px solid $highlight-color;
 		
 			&:hover{
 				background-color: $accent-color;
@@ -307,15 +320,19 @@ html { margin-top: 30px !important; }
 		@include clearfix;
 	
 		float: left;
-		background: $accent-color;
+		background: $search-bg;
 	
 	}
 	
 	.ncstate-utility-bar-search-submit{
 		
 		float: left;
-		background-color: $accent-color;
-		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiIGQ9Ik0xMjUuNDA5LDExMi4zODFMOTMuMjk2LDgwLjI2OWM0LjE4MS02LjQ5Myw2LjQzMS0xNC4wNTEsNi40My0yMS45NTVjMC4wMDEtMTAuODY0LTQuMjMtMjEuMDc5LTExLjkxNC0yOC43NgoJQzgwLjEzLDIxLjg3LDY5LjkxNywxNy42NCw1OS4wNTIsMTcuNjRzLTIxLjA3OSw0LjIzLTI4Ljc2MSwxMS45MTRjLTcuNjgzLDcuNjgxLTExLjkxNCwxNy44OTYtMTEuOTEzLDI4Ljc2CgljLTAuMDAxLDEwLjg2NCw0LjIzLDIxLjA3OCwxMS45MTMsMjguNzYxYzcuNjgyLDcuNjgzLDE3Ljg5NywxMS45MTMsMjguNzYxLDExLjkxM2M3LjkwNiwwLDE1LjQ2LTIuMjUsMjEuOTUzLTYuNDMxbDMyLjExMywzMi4xMTUKCUwxMjUuNDA5LDExMi4zODF6IE0zOS45OTQsNzcuMzcxYy01LjA5LTUuMDkxLTcuODk0LTExLjg1OS03Ljg5NC0xOS4wNThjMC03LjIsMi44MDQtMTMuOTY3LDcuODk0LTE5LjA1NwoJYzUuMDkxLTUuMDksMTEuODU4LTcuODk1LDE5LjA1OC03Ljg5NWM3LjE5OCwwLDEzLjk2NSwyLjgwNSwxOS4wNTcsNy44OTVjNS4wOTEsNS4wOSw3Ljg5NCwxMS44NTcsNy44OTQsMTkuMDU3CgljMCw3LjE5OS0yLjgwMywxMy45NjctNy44OTQsMTkuMDU4Yy01LjA5MSw1LjA5LTExLjg1OCw3Ljg5NS0xOS4wNTcsNy44OTVDNTEuODUzLDg1LjI2Niw0NS4wODUsODIuNDYxLDM5Ljk5NCw3Ny4zNzF6Ii8+Cjwvc3ZnPgo=);
+		background-color: $search-bg;
+		@if $color == black{
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiIGQ9Ik0xMjUuNDA5LDExMi4zODFMOTMuMjk2LDgwLjI2OWM0LjE4MS02LjQ5Myw2LjQzMS0xNC4wNTEsNi40My0yMS45NTVjMC4wMDEtMTAuODY0LTQuMjMtMjEuMDc5LTExLjkxNC0yOC43NgoJQzgwLjEzLDIxLjg3LDY5LjkxNywxNy42NCw1OS4wNTIsMTcuNjRzLTIxLjA3OSw0LjIzLTI4Ljc2MSwxMS45MTRjLTcuNjgzLDcuNjgxLTExLjkxNCwxNy44OTYtMTEuOTEzLDI4Ljc2CgljLTAuMDAxLDEwLjg2NCw0LjIzLDIxLjA3OCwxMS45MTMsMjguNzYxYzcuNjgyLDcuNjgzLDE3Ljg5NywxMS45MTMsMjguNzYxLDExLjkxM2M3LjkwNiwwLDE1LjQ2LTIuMjUsMjEuOTUzLTYuNDMxbDMyLjExMywzMi4xMTUKCUwxMjUuNDA5LDExMi4zODF6IE0zOS45OTQsNzcuMzcxYy01LjA5LTUuMDkxLTcuODk0LTExLjg1OS03Ljg5NC0xOS4wNThjMC03LjIsMi44MDQtMTMuOTY3LDcuODk0LTE5LjA1NwoJYzUuMDkxLTUuMDksMTEuODU4LTcuODk1LDE5LjA1OC03Ljg5NWM3LjE5OCwwLDEzLjk2NSwyLjgwNSwxOS4wNTcsNy44OTVjNS4wOTEsNS4wOSw3Ljg5NCwxMS44NTcsNy44OTQsMTkuMDU3CgljMCw3LjE5OS0yLjgwMywxMy45NjctNy44OTQsMTkuMDU4Yy01LjA5MSw1LjA5LTExLjg1OCw3Ljg5NS0xOS4wNTcsNy44OTVDNTEuODUzLDg1LjI2Niw0NS4wODUsODIuNDYxLDM5Ljk5NCw3Ny4zNzF6Ii8+Cjwvc3ZnPgo=);
+		}@else{
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KICAgd2lkdGg9IjE0NHB4IiBoZWlnaHQ9IjE0NHB4IiB2aWV3Qm94PSIwIDAgMTQ0IDE0NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQ0IDE0NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBzdHlsZT0iZmlsbDogIzAwMDsiIGQ9Ik0xMjUuNDA5LDExMi4zODFMOTMuMjk2LDgwLjI2OWM0LjE4MS02LjQ5Myw2LjQzMS0xNC4wNTEsNi40My0yMS45NTVjMC4wMDEtMTAuODY0LTQuMjMtMjEuMDc5LTExLjkxNC0yOC43Ng0KICBDODAuMTMsMjEuODcsNjkuOTE3LDE3LjY0LDU5LjA1MiwxNy42NHMtMjEuMDc5LDQuMjMtMjguNzYxLDExLjkxNGMtNy42ODMsNy42ODEtMTEuOTE0LDE3Ljg5Ni0xMS45MTMsMjguNzYNCiAgYy0wLjAwMSwxMC44NjQsNC4yMywyMS4wNzgsMTEuOTEzLDI4Ljc2MWM3LjY4Miw3LjY4MywxNy44OTcsMTEuOTEzLDI4Ljc2MSwxMS45MTNjNy45MDYsMCwxNS40Ni0yLjI1LDIxLjk1My02LjQzMWwzMi4xMTMsMzIuMTE1DQogIEwxMjUuNDA5LDExMi4zODF6IE0zOS45OTQsNzcuMzcxYy01LjA5LTUuMDkxLTcuODk0LTExLjg1OS03Ljg5NC0xOS4wNThjMC03LjIsMi44MDQtMTMuOTY3LDcuODk0LTE5LjA1Nw0KICBjNS4wOTEtNS4wOSwxMS44NTgtNy44OTUsMTkuMDU4LTcuODk1YzcuMTk4LDAsMTMuOTY1LDIuODA1LDE5LjA1Nyw3Ljg5NWM1LjA5MSw1LjA5LDcuODk0LDExLjg1Nyw3Ljg5NCwxOS4wNTcNCiAgYzAsNy4xOTktMi44MDMsMTMuOTY3LTcuODk0LDE5LjA1OGMtNS4wOTEsNS4wOS0xMS44NTgsNy44OTUtMTkuMDU3LDcuODk1QzUxLjg1Myw4NS4yNjYsNDUuMDg1LDgyLjQ2MSwzOS45OTQsNzcuMzcxeiIvPg0KPC9zdmc+DQo=);
+		}
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 1.3em;
@@ -323,10 +340,12 @@ html { margin-top: 30px !important; }
 		width: 30px;
 		height: 30px;
 		padding: 0px;
+		@include border-radius(0px); /* Make corners not round */
+		-webkit-appearance: none; /* Make corners not round */
 	
 		&:hover{
 			cursor: pointer;
-			background-color: $highlight-color;
+			background-color: $search-highlight;
 		}
 	
 		@include hideText;
@@ -336,9 +355,10 @@ html { margin-top: 30px !important; }
 		float: left;
 		@include border-radius(0px); /* Make corners not round */
 		-webkit-appearance: none; /* Make corners not round */
-		background-color: $accent-color;
+		background-color: $search-bg;
 		border: none;
-		color: #fff;
+		color: $search-txt;
+		font-size: 13px;
 		width: 150px;
 		padding: 6px;
 		text-align: center;
@@ -349,13 +369,13 @@ html { margin-top: 30px !important; }
 		top: 30px;
 		right: 0;
 		
-		&::-webkit-input-placeholder{color: #fff;}
-		&:-moz-placeholder{color: #fff;}
-		&::-moz-placeholder{color: #fff;}
-		&:-ms-input-placeholder{color: #fff;}
+		&::-webkit-input-placeholder{color: $search-txt;}
+		&:-moz-placeholder{color: $search-txt;}
+		&::-moz-placeholder{color: $search-txt;}
+		&:-ms-input-placeholder{color: $search-txt;}
 		
 		&:focus{ 
-			background-color: $highlight-color;
+			background-color: $search-highlight;
 			&::-webkit-input-placeholder{transition: opacity 0.5s ease; opacity: 0;}
 			&:-moz-placeholder{transition: opacity 0.5s ease; opacity: 0;}
 			&::-moz-placeholder{transition: opacity 0.5s ease; opacity: 0;}
