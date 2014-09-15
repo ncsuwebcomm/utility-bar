@@ -14,6 +14,10 @@ var _ub = _ub || {};
 	_ub.maxWidth = '<?php echo urlencode($_GET['maxWidth']); ?>';
 <?php endif; ?>
 
+<?php if(isset($_GET['placeholder']) || strlen($_GET['placeholder']) > 0): ?>
+  _ub.placeholder = '<?php echo rawurlencode($_GET['placeholder']); ?>';
+<?php endif; ?>
+
 (function(){
 	var bar = document.createElement('script'); bar.type = 'text/javascript'; bar.async = true;
 	bar.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/load-utility-bar.js';

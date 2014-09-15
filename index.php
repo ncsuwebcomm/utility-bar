@@ -24,7 +24,7 @@
 						<a id="ncstate-utility-bar-toggle-link" aria-label="Toggle resources" href="#">Resources</a>
 					</div>
 				
-					<div class="ncstate-utility-bar-search" role="search" aria-label="Search w w w . n c s u . e d u">
+					<div class="ncstate-utility-bar-search" role="search" aria-label="' + _ub.placeholder + '">
 						
 						<form action="http://www.ncsu.edu/search" name="navsearchform" class="ncstate-utility-bar-search-form">
 	        
@@ -32,7 +32,7 @@
 						    <input id="navcof" name="cof" type="hidden" value="FORID:11">
 						    
 							<input class="ncstate-utility-bar-search-field" id="search-input" name="q" type="search"
-								placeholder="search ncsu.edu" aria-label="search n c s u . e d u">
+								placeholder="' + _ub.placeholder + '" aria-label="' + _ub.placeholder + '">
 						 	<input type="submit" id="search-submit" name="search-submit" value="search"
 								class="ncstate-utility-bar-search-submit">
 				
