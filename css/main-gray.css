@@ -82,7 +82,7 @@ html {
     box-sizing: border-box; }
   /* line 102, main.scss */
   .ncstate-utility-bar a {
-    color: #fff !important;
+    color: white;
     text-decoration: none; }
   /* line 107, main.scss */
   .ncstate-utility-bar ul li {
