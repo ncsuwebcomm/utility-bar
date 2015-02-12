@@ -3,7 +3,7 @@
 var _ub = _ub || {};
 	
 <?php if(isset($_GET['googleCustomSearchCode']) || strlen($_GET['googleCustomSearchCode']) > 0): ?>
-	_ub.googleCustomSearchCode = '<?php echo urlencode($_GET['googleCustomSearchCode']); ?>';
+	_ub.googleCustomSearchCode = '<?php echo htmlspecialchars($_GET['googleCustomSearchCode']); ?>';
 <?php endif; ?>
 
 <?php if(isset($_GET['color']) || strlen($_GET['color']) > 0): ?>
