@@ -22,6 +22,7 @@
 
 					<div class="ncstate-utility-bar-toggle">
 						<a id="ncstate-utility-bar-toggle-link" aria-label="Toggle resources" href="#">Resources</a>
+						<div class="indicator"></div>
 					</div>
 				
 					<div class="ncstate-utility-bar-search" role="search" aria-label="' + _ub.placeholder + '">

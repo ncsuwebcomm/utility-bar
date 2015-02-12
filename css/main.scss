@@ -36,11 +36,13 @@ $color: black;
 	$highlight-color: lighten($primary-color,10%);
 	$text-color: #ffffff;
 	$link-color: #999999;
+	$resources-color: #c00;
 
 @if $color == gray{
 	$primary-color: #333;
 	$accent-color: darken($primary-color,10%);
 	$highlight-color: darken($primary-color,3%);
+	$resources-color: #c00;
 	// $search-txt: #000;
 	// $search-bg: #ccc;
 	// $search-highlight: #aaa;
@@ -49,6 +51,7 @@ $color: black;
 	$accent-color: darken($primary-color,10%);
 	$highlight-color: darken($primary-color,3%);
 	$link-color: #dddddd;
+	$resources-color: #333;
 	// $search-txt: #000;
 	// $search-bg: #ccc;
 	// $search-highlight: #aaa;
@@ -296,11 +299,10 @@ html { margin-top: 30px !important; }
 	.ncstate-utility-bar-toggle{
 	
 		float: left;
-		margin-right: 3px;
 
 		a{
 			display: block;
-			background-color: $primary-color;
+			background-color: $resources-color;
 			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiIGQ9Ik0yOC4zMjIsMjguNDM3VjQ1LjdoODcuMzU3VjI4LjQzN0gyOC4zMjJ6IE0yOC4zMjIsMTE1LjU2NGg4Ny4zNTdWOTguMzAySDI4LjMyMlYxMTUuNTY0eiBNMjguMzIyLDgwLjYzM2g4Ny4zNTdWNjMuMzY5CglIMjguMzIyVjgwLjYzM3oiLz4KPC9zdmc+Cg==);
 			background-repeat: no-repeat;
 			background-position: 90% 50%;
@@ -314,8 +316,21 @@ html { margin-top: 30px !important; }
 			padding: 8px 13px;
 		
 			&:hover{
-				background-color: $accent-color;
+				background-color: darken($resources-color, 10%);
+				& + .indicator {
+					border-top: 8px solid darken($resources-color, 10%);
+				}
 			}
+		}
+
+		.indicator {
+			width: 0;
+			height: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-top: 8px solid $resources-color;
+			margin: 0 auto -0.5em;
+			display: none;
 		}
 	
 	}
