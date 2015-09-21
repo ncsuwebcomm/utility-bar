@@ -17,7 +17,7 @@
 		if(toggleState === 'hidden'){
 			toggleView.style.display = "block";
 			toggleElm.nextElementSibling.style.display = "block";
-			setTimeout(function(){toggleView.className = toggleView.className.replace(classPattern,'');}, 10);
+			setTimeout(function(){toggleView.className = toggleView.className.replace(classPattern,'');}, 30);
 			toggleState = 'visible';
 		} else {
 			toggleElm.nextElementSibling.style.display = "none";
