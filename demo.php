@@ -9,8 +9,9 @@
 
 <body>
 
+	<a class="skip-main" href="#main">Skip to main content</a>
 	<div id="ncstate-utility-bar"></div>
 	<div id="second"></div>
-	
+	<div id="main" tabindex="-1"></div>
 </body>
 </html>
