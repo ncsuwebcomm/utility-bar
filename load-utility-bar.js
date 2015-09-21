@@ -10,7 +10,7 @@
 	
 	_ub.color = barcolors[_ub.color] === true ? _ub.color : 'gray';
 	_ub.googleCustomSearchCode = _ub.googleCustomSearchCode;
-	_ub.placeholder = _ub.placeholder ? decodeURI(_ub.placeholder) : 'search ncsu.edu';
+	_ub.placeholder = _ub.placeholder || 'search ncsu.edu';
 
 	barcss.type = 'text/css';
 	barcss.media = 'all';
