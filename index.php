@@ -105,6 +105,7 @@
 								<li><a href="http://news.ncsu.edu/">NC State News</a></li>
 								<li><a href="http://www.ncsu.edu/grad/">Graduate School</a></li>
 								<li><a href="http://gmail.ncsu.edu/">Gmail Access</a></li>
+								<li><a href="https://social.ncsu.edu/">NC State Social Media</a></li>
 							</ul>
 						</dd>
 					</dl>
