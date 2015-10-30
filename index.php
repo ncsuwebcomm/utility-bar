@@ -15,7 +15,7 @@
 			<div class="ncstate-utility-bar-wrapper ncstate-utility-bar-wrapper-primary" id="ncstate-utility-bar-wrapper-primary">
 			
 				<div class="ncstate-utility-bar-home">
-					<a href="http://www.ncsu.edu">NC State Home</a>
+					<a href="https://www.ncsu.edu">NC State Home</a>
 				</div>
 
 				<div class="ncstate-utility-bar-options">
@@ -27,7 +27,7 @@
 				
 					<div class="ncstate-utility-bar-search" role="search" aria-label="' + _ub.placeholder + '">
 						
-						<form action="http://www.ncsu.edu/search" name="navsearchform" class="ncstate-utility-bar-search-form">
+						<form action="https://www.ncsu.edu/search" name="navsearchform" class="ncstate-utility-bar-search-form">
 	        
 							<input id="navcx" name="cx" type="hidden" value="' + _ub.googleCustomSearchCode + '">
 						    <input id="navcof" name="cof" type="hidden" value="FORID:11">
@@ -51,10 +51,10 @@
 			<div class="ncstate-utility-bar-wrapper">
 
 				<ul class="ncstate-utility-bar-primary-util">
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="http://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="http://mypack.ncsu.edu/">MyPack Portal</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://maps.ncsu.edu/">Campus Map</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="https://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="https://mypack.ncsu.edu/">MyPack Portal</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="https://maps.ncsu.edu/">Campus Map</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="https://www.lib.ncsu.edu/">Libraries</a></li>
 				</ul>
 				
 				<div class="ncstate-utility-bar-sec-util">
@@ -62,11 +62,11 @@
 						<dt>Campus Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="http://housing.ncsu.edu/">University Housing</a></li>
+								<li><a href="https://housing.ncsu.edu/">University Housing</a></li>
 								<li><a href="http://www.ncsudining.com/">University Dining</a></li>
 								<li><a href="http://shop.bookstore.ncsu.edu/">Bookstores</a></li>
-								<li><a href="http://ncsu.transloc.com/">Wolfline Buses</a></li>
-								<li><a href="http://www.ncsu.edu/calendars">Calendar</a></li>
+								<li><a href="https://ncsu.transloc.com/">Wolfline Buses</a></li>
+								<li><a href="https://www.ncsu.edu/calendars">Calendar</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -75,11 +75,11 @@
 						<dt>Academic Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="http://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
-								<li><a href="http://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
+								<li><a href="https://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
+								<li><a href="https://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
 								<li><a href="https://wolfware.ncsu.edu/">WolfWare</a></li>
 								<li><a href="http://oia.ncsu.edu/">International Affairs</a></li>
-								<li><a href="http://distance.ncsu.edu/">Distance Education</a></li>
+								<li><a href="https://distance.ncsu.edu/">Distance Education</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -88,10 +88,10 @@
 						<dt>Other Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="http://www.fis.ncsu.edu/cashier/">Cashier's Office</a></li>
-								<li><a href="http://www.ncsu.edu/registrar/">Registration and Records</a></li>
-								<li><a href="http://financialaid.ncsu.edu/">Scholarships and Financial Aid</a></li>
-								<li><a href="http://oe.ncsu.edu/">Outreach and Engagement</a></li>
+								<li><a href="http://treasurer.ofb.ncsu.edu/cashier/">Cashier's Office</a></li>
+								<li><a href="https://registrar.ncsu.edu/">Registration and Records</a></li>
+								<li><a href="https://financialaid.ncsu.edu/">Scholarships and Financial Aid</a></li>
+								<li><a href="https://oe.ncsu.edu/">Outreach and Engagement</a></li>
 								<li><a href="http://help.ncsu.edu/">NC State Help Desk</a></li>
 							</ul>
 						</dd>
@@ -101,10 +101,10 @@
 						<dt>&nbsp;</dt>
 						<dd>
 							<ul>
-								<li><a href="http://giving.ncsu.edu/">Giving</a></li>
-								<li><a href="http://news.ncsu.edu/">NC State News</a></li>
-								<li><a href="http://www.ncsu.edu/grad/">Graduate School</a></li>
-								<li><a href="http://gmail.ncsu.edu/">Gmail Access</a></li>
+								<li><a href="https://giving.ncsu.edu/">Giving</a></li>
+								<li><a href="https://news.ncsu.edu/">NC State News</a></li>
+								<li><a href="https://www.ncsu.edu/grad/">Graduate School</a></li>
+								<li><a href="https://gmail.ncsu.edu/">Gmail Access</a></li>
 								<li><a href="https://social.ncsu.edu/">NC State Social Media</a></li>
 							</ul>
 						</dd>
