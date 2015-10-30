@@ -53,8 +53,8 @@
 				<ul class="ncstate-utility-bar-primary-util">
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="https://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="https://mypack.ncsu.edu/">MyPack Portal</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="https://maps.ncsu.edu/">Campus Map</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="https://www.lib.ncsu.edu/">Libraries</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://maps.ncsu.edu/">Campus Map</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
 				</ul>
 				
 				<div class="ncstate-utility-bar-sec-util">
@@ -75,7 +75,7 @@
 						<dt>Academic Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="https://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
+								<li><a href="http://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
 								<li><a href="https://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
 								<li><a href="https://wolfware.ncsu.edu/">WolfWare</a></li>
 								<li><a href="http://oia.ncsu.edu/">International Affairs</a></li>
@@ -89,9 +89,9 @@
 						<dd>
 							<ul>
 								<li><a href="http://treasurer.ofb.ncsu.edu/cashier/">Cashier's Office</a></li>
-								<li><a href="https://registrar.ncsu.edu/">Registration and Records</a></li>
-								<li><a href="https://financialaid.ncsu.edu/">Scholarships and Financial Aid</a></li>
-								<li><a href="https://oe.ncsu.edu/">Outreach and Engagement</a></li>
+								<li><a href="http://registrar.ncsu.edu/">Registration and Records</a></li>
+								<li><a href="http://financialaid.ncsu.edu/">Scholarships and Financial Aid</a></li>
+								<li><a href="http://oe.ncsu.edu/">Outreach and Engagement</a></li>
 								<li><a href="http://help.ncsu.edu/">NC State Help Desk</a></li>
 							</ul>
 						</dd>
