@@ -104,7 +104,7 @@
 								<li><a href="https://giving.ncsu.edu/">Giving</a></li>
 								<li><a href="https://news.ncsu.edu/">NC State News</a></li>
 								<li><a href="https://www.ncsu.edu/grad/">Graduate School</a></li>
-								<li><a href="https://gmail.ncsu.edu/">Gmail Access</a></li>
+								<li><a href="http://gmail.ncsu.edu/">Gmail Access</a></li>
 								<li><a href="https://social.ncsu.edu/">NC State Social Media</a></li>
 							</ul>
 						</dd>
