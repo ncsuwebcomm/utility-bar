@@ -1,4 +1,6 @@
 (function(w,d,undefined){
+
+	"use strict";
 		
 	var _ub = w._ub || {},
 		barcolors = {"red": true, "black": true, "gray": true},
