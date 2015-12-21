@@ -18,6 +18,10 @@ var _ub = _ub || {};
   _ub.placeholder = '<?php echo rawurlencode($_GET['placeholder']); ?>';
 <?php endif; ?>
 
+<?php if(isset($_GET['showBrick']) || strlen($_GET['showBrick']) > 0): ?>
+  _ub.showBrick = '<?php echo rawurlencode($_GET['showBrick']); ?>';
+<?php endif; ?>
+
 (function(){
 	var bar = document.createElement('script'); bar.type = 'text/javascript'; bar.async = true;
 	bar.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/load-utility-bar.js';

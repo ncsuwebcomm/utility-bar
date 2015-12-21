@@ -265,25 +265,38 @@ html { margin-top: 30px !important; }
 	// Home button
 		
 	.ncstate-utility-bar-home{
-	
-		float: left;
-	
-		a{
 		
-			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBzdHlsZT0iZmlsbDogI2ZmZjsiIHBvaW50cz0iNDkuNDc3LDg1LjY3NiA5MC41MDgsMTI2LjcwOSAxMDQuMTg2LDExMy4wMyA2My4xNTMsNzEuOTk4IDEwNC4xODYsMzAuOTY2IDkwLjUwOCwxNy4yOSAzNS43OTksNzEuOTk4ICIvPgo8L3N2Zz4K);
-			background-repeat: no-repeat;
-			background-position: left;
-			background-size: 1.2em;
+		float: left;
+
+		a{
 			display: block;
 			padding: 8px 14px 8px 28px;
 			line-height: 14px;
-		
-			&:hover{
-				background-color: $accent-color;
-			}
-		
 		}
-	
+
+		&.show-brick{
+			background-image:url("https://cdn.ncsu.edu/brand-assets/utility-bar/img/ncstate-brick-2x2-red.jpg");
+			background-repeat:no-repeat;
+			background-size:contain;
+			height:60px;
+
+			a{
+				color:transparent;
+				height:60px;
+			}
+		}
+		&.no-brick{
+			a{
+				background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBzdHlsZT0iZmlsbDogI2ZmZjsiIHBvaW50cz0iNDkuNDc3LDg1LjY3NiA5MC41MDgsMTI2LjcwOSAxMDQuMTg2LDExMy4wMyA2My4xNTMsNzEuOTk4IDEwNC4xODYsMzAuOTY2IDkwLjUwOCwxNy4yOSAzNS43OTksNzEuOTk4ICIvPgo8L3N2Zz4K);
+				background-repeat: no-repeat;
+				background-position: left;
+				background-size: 1.2em;
+			
+				&:hover{
+					background-color: $accent-color;
+				}
+			}
+		}
 	}
 
 	// Search/toggle container
