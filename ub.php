@@ -2,24 +2,27 @@
 	
 var _ub = _ub || {};
 	
-<?php if(isset($_GET['googleCustomSearchCode']) || strlen($_GET['googleCustomSearchCode']) > 0): ?>
-	_ub.googleCustomSearchCode = '<?php echo htmlspecialchars($_GET['googleCustomSearchCode']); ?>';
+<?php if(!empty($_GET['googleCustomSearchCode'])): ?>
+	_ub.googleCustomSearchCode = '<?php echo htmlspecialchars($_GET['googleCustomSearchCode'], ENT_QUOTES); ?>';
 <?php endif; ?>
 
-<?php if(isset($_GET['color']) || strlen($_GET['color']) > 0): ?>
-	_ub.color = '<?php echo urlencode($_GET['color']); ?>';
+<?php if(!empty($_GET['color'])): ?>
+	_ub.color = '<?php echo htmlspecialchars($_GET['color'], ENT_QUOTES); ?>';
 <?php endif; ?>
 
-<?php if(isset($_GET['maxWidth']) || strlen($_GET['maxWidth']) > 0): ?>
-	_ub.maxWidth = '<?php echo urlencode($_GET['maxWidth']); ?>';
+<?php if(isset($_GET['maxWidth'])): ?>
+<?php	$_GET['maxWidth'] = intval($_GET['maxWidth']); ?>
+<?php if(!empty($_GET['maxWidth'])): ?>
+	_ub.maxWidth = '<?php echo $_GET['maxWidth']; ?>';
+<?php endif; ?>
 <?php endif; ?>
 
-<?php if(isset($_GET['placeholder']) || strlen($_GET['placeholder']) > 0): ?>
-  _ub.placeholder = '<?php echo rawurlencode($_GET['placeholder']); ?>';
+<?php if(!empty($_GET['placeholder'])): ?>
+	_ub.placeholder = '<?php echo htmlspecialchars($_GET['placeholder'], ENT_QUOTES); ?>';
 <?php endif; ?>
 
-<?php if(isset($_GET['showBrick']) || strlen($_GET['showBrick']) > 0): ?>
-  _ub.showBrick = '<?php echo rawurlencode($_GET['showBrick']); ?>';
+<?php if(isset($_GET['showBrick'])): ?>
+	_ub.showBrick = '<?php echo ($_GET['showBrick'] === '1' ? '1' : '0'); ?>';
 <?php endif; ?>
 
 (function(){
