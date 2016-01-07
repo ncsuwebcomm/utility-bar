@@ -217,6 +217,10 @@ html { margin-top: 30px !important; }
 					padding-left: 2.75em;
 				}
 			}
+
+			&.accomodate-brick{
+				padding-top:30px;
+			}
 		}
 		
 		.ncstate-utility-bar-sec-util {
@@ -393,9 +397,10 @@ html { margin-top: 30px !important; }
 		color: $search-txt;
 		font-size: 13px;
 		width: 150px;
-		padding: 6px;
+		padding: 0px;
 		text-align: center;
-		height: 30px;
+		height: inherit;
+		box-sizing: border-box;
 		/* Make form hidden dropdown in mobile */
 		display: none;
 		position: absolute;
