@@ -1,29 +1,21 @@
 (function(w,d,undefined){
 		
 	var _ub = w._ub || {},
+		barcolors = {"red": true, "black": true, "gray": true},
 		barcss = d.createElement('link'),
 		barjs = d.createElement('script'),
 		scripts = d.getElementsByTagName('script')[0],
 		bar = d.createElement('div');
 	// add the styles for the brand bar
 	
-	_ub.color = _ub.color || 'gray';
+	_ub.color = barcolors[_ub.color] === true ? _ub.color : 'gray';
 	_ub.googleCustomSearchCode = _ub.googleCustomSearchCode;
 	_ub.placeholder = _ub.placeholder ? decodeURI(_ub.placeholder) : 'search ncsu.edu';
 
-	//Set up contains method on Array
-
-	Array.prototype.contains = function ( needle ) {
-		for (var i in this) {
-			if (this[i] === needle) {return true;}
-		}
-		return false;
-	};
-		
 	barcss.type = 'text/css';
 	barcss.media = 'all';
 	barcss.rel = 'stylesheet';
-	barcss.href = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/css/' + (['red','black','gray'].contains(_ub.color) ? 'main-' + _ub.color : 'main') +  '.css';
+	barcss.href = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/css/main-' + _ub.color + '.css';
 	
 	d.head.appendChild(barcss);
 	
