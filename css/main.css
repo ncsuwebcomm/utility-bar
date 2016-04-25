@@ -19,7 +19,7 @@ html {
   font-family: Univers, arial, sans-serif;
   font-size: 14px;
   line-height: 1;
-  z-index: 9997 !important;
+  z-index: 99997 !important;
   overflow: visible; }
   /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
   .ncstate-utility-bar html, .ncstate-utility-bar body, .ncstate-utility-bar div, .ncstate-utility-bar span, .ncstate-utility-bar applet, .ncstate-utility-bar object, .ncstate-utility-bar iframe,
@@ -96,7 +96,7 @@ html {
     right: 0px;
     width: 100%;
     height: 30px;
-    z-index: 9999;
+    z-index: 99999;
     background: #000; }
   /* line 130, main.scss */
   .ncstate-utility-bar .ncstate-utility-bar-wrapper {
@@ -145,7 +145,7 @@ html {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
-    z-index: 9998;
+    z-index: 99998;
     position: relative;
     top: 30px;
     display: none; }

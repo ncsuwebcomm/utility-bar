@@ -99,7 +99,7 @@ html { margin-top: 30px !important; }
 	font-size: 14px;
 	line-height: 1;
 
-	z-index: 9997 !important;
+	z-index: 99997 !important;
 	overflow: visible;
 	
 	a{
@@ -119,7 +119,7 @@ html { margin-top: 30px !important; }
 		right: 0px;
 		width: 100%;
 		height: 30px;
-		z-index: 9999;
+		z-index: 99999;
 
 		background: $primary-color;
 	}
@@ -157,7 +157,7 @@ html { margin-top: 30px !important; }
 		@include transition-property(all);
 		@include transition-duration(.5s);
 		@include translate(0, 0);
-		z-index: 9998;
+		z-index: 99998;
 		position: relative;
 		top: 30px;
 		display: none;
