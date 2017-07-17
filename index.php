@@ -51,10 +51,10 @@
 			<div class="ncstate-utility-bar-wrapper">
 
 				<ul class="ncstate-utility-bar-primary-util">
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="https://www.ncsu.edu/directory/" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-directory"><a href="https://projects.ncsu.edu/directory" id="ncstate-utility-bar-first-link">Campus Directory</a></li>
 					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-mypack"><a href="https://mypack.ncsu.edu/">MyPack Portal</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="http://maps.ncsu.edu/">Campus Map</a></li>
-					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="http://www.lib.ncsu.edu/">Libraries</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-map"><a href="https://maps.ncsu.edu/">Campus Map</a></li>
+					<li class="ncstate-utility-bar-primary-util ncstate-utility-bar-libraries"><a href="https://www.lib.ncsu.edu/">Libraries</a></li>
 				</ul>
 				
 				<div class="ncstate-utility-bar-sec-util">
@@ -63,7 +63,7 @@
 						<dd>
 							<ul>
 								<li><a href="https://housing.ncsu.edu/">University Housing</a></li>
-								<li><a href="https://dining.ncsu.edu/">University Dining</a></li>
+								<li><a href="https://dining.ncsu.edu/">NC State Dining</a></li>
 								<li><a href="http://shop.bookstore.ncsu.edu/">Bookstores</a></li>
 								<li><a href="https://ncsu.transloc.com/">Wolfline Buses</a></li>
 								<li><a href="https://www.ncsu.edu/calendars">Calendar</a></li>
@@ -75,11 +75,11 @@
 						<dt>Academic Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="http://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
+								<li><a href="https://admissions.ncsu.edu/">Undergraduate Admissions</a></li>
 								<li><a href="https://www.ncsu.edu/academics/departments-a-z/">Academic Departments</a></li>
 								<li><a href="https://wolfware.ncsu.edu/">WolfWare</a></li>
-								<li><a href="http://oia.ncsu.edu/">International Affairs</a></li>
-								<li><a href="https://distance.ncsu.edu/">Distance Education</a></li>
+								<li><a href="https://global.ncsu.edu/">Global Engagement</a></li>
+								<li><a href="https://online-distance.ncsu.edu/">Distance Education</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -88,11 +88,11 @@
 						<dt>Other Resources</dt>
 						<dd>
 							<ul>
-								<li><a href="http://treasurer.ofb.ncsu.edu/cashier/">Cashier's Office</a></li>
-								<li><a href="http://registrar.ncsu.edu/">Registration and Records</a></li>
-								<li><a href="http://financialaid.ncsu.edu/">Scholarships and Financial Aid</a></li>
-								<li><a href="http://oe.ncsu.edu/">Outreach and Engagement</a></li>
-								<li><a href="http://help.ncsu.edu/">NC State Help Desk</a></li>
+								<li><a href="https://treasurer.ofb.ncsu.edu/cashier/">Cashier's Office</a></li>
+								<li><a href="https://registrar.ncsu.edu/">Registration and Records</a></li>
+								<li><a href="https://studentservices.ncsu.edu/your-money/financial-aid/">Scholarships and Financial Aid</a></li>
+								<li><a href="https://oe.ncsu.edu/">Outreach and Engagement</a></li>
+								<li><a href="https://help.oit.ncsu.edu/">NC State Help Desk</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -101,10 +101,10 @@
 						<dt>&nbsp;</dt>
 						<dd>
 							<ul>
-								<li><a href="https://giving.ncsu.edu/">Giving</a></li>
+								<li><a href="https://campaign.ncsu.edu/">Giving</a></li>
 								<li><a href="https://news.ncsu.edu/">NC State News</a></li>
-								<li><a href="https://www.ncsu.edu/grad/">Graduate School</a></li>
-								<li><a href="http://gmail.ncsu.edu/">Gmail Access</a></li>
+								<li><a href="https://grad.ncsu.edu/">Graduate School</a></li>
+								<li><a href="https://gmail.ncsu.edu/">Gmail Access</a></li>
 								<li><a href="https://social.ncsu.edu/">NC State Social Media</a></li>
 							</ul>
 						</dd>
