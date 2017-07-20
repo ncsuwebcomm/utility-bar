@@ -11,7 +11,7 @@ var _ub = _ub || {};
 <?php endif; ?>
 
 <?php if( !empty($_GET['maxWidth']) ): ?>
-	_ub.maxWidth = '<?php echo urlencode($_GET['maxWidth']); ?>';
+	_ub.maxWidth = '<?php echo intval($_GET['maxWidth']); ?>';
 <?php endif; ?>
 
 <?php if( !empty($_GET['placeholder']) ): ?>
@@ -19,7 +19,7 @@ var _ub = _ub || {};
 <?php endif; ?>
 
 <?php if( !empty($_GET['showBrick']) ): ?>
-  _ub.showBrick = '<?php echo rawurlencode($_GET['showBrick']); ?>';
+  _ub.showBrick = 1;
 <?php endif; ?>
 
 (function(){
