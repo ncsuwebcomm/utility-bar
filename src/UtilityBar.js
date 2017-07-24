@@ -33,6 +33,20 @@ export default class UtilityBar {
             options.showBrick = 1;
         }
 
+        if (options.hasOwnProperty('placeholder')) {
+            // Javascript doesn't convert + to space, so we do it manually.
+            options.placeholder = decodeURI(options.placeholder.replace(/\+/g, ' '));
+
+            if (options.placeholder.match(/[\&\"\'\`\<\>]/)) {
+                delete options.placeholder;
+            }
+        }
+
+        if (options.hasOwnProperty('googleCustomSearchCode') && 
+            options.googleCustomSearchCode.match(/[\&\"\'\`\<\>]/) ) {
+                delete options.googleCustomSearchCode;
+        }
+
         return options;
     }
 
