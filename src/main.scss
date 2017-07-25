@@ -46,14 +46,17 @@ $gray-primary-color: #333;
 $gray-accent-color: darken($gray-primary-color,10%);
 $gray-highlight-color: darken($gray-primary-color,3%);
 $gray-resources-color: #c00;
+$gray-text-color: $default-text-color;
+$gray-link-color: $default-link-color;
 $gray-search-bg: $gray-accent-color;
 $gray-search-highlight: $gray-highlight-color;
 
 $red-primary-color: #cc0000;
 $red-accent-color: darken($red-primary-color,10%);
 $red-highlight-color: darken($red-primary-color,3%);
-$red-link-color: #dddddd;
 $red-resources-color: #333;
+$red-text-color: $default-text-color;
+$red-link-color: #ccc;
 $red-search-bg: $red-accent-color;
 $red-search-highlight: $red-highlight-color;
 
@@ -539,6 +542,7 @@ html { margin-top: 30px !important; }
 
 	.ncstate-utility-bar-links {
 		background: $red-accent-color;
+		dl dd a {color: $red-link-color;}
 	}
 
 	.ncstate-utility-bar-toggle {
