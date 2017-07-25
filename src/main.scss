@@ -34,31 +34,28 @@
 
 // color schemes
 $default-primary-color: #000;
-$default-accent-color: lighten($default-primary-color,20%);
-$default-highlight-color: lighten($default-primary-color,10%);
+$default-accent-color: #333;
 $default-resources-color: #c00;
 $default-text-color: #ffffff;
-$default-link-color: #999999;
+$default-link-color: #AAA;
 $default-search-bg: $default-accent-color;
-$default-search-highlight: $default-highlight-color;
+$default-search-highlight: #1a1a1a;
 
 $gray-primary-color: #333;
-$gray-accent-color: darken($gray-primary-color,10%);
-$gray-highlight-color: darken($gray-primary-color,3%);
+$gray-accent-color: #1a1a1a;
 $gray-resources-color: #c00;
 $gray-text-color: $default-text-color;
-$gray-link-color: $default-link-color;
+$gray-link-color: #999;
 $gray-search-bg: $gray-accent-color;
-$gray-search-highlight: $gray-highlight-color;
+$gray-search-highlight: #2b2b2b;
 
-$red-primary-color: #cc0000;
-$red-accent-color: darken($red-primary-color,10%);
-$red-highlight-color: darken($red-primary-color,3%);
+$red-primary-color: #c00;
+$red-accent-color: #900;
 $red-resources-color: #333;
 $red-text-color: $default-text-color;
 $red-link-color: #ccc;
 $red-search-bg: $red-accent-color;
-$red-search-highlight: $red-highlight-color;
+$red-search-highlight: #bd0000;
 
 
 html { margin-top: 30px !important; }
