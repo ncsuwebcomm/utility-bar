@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^ub.php$ dist/ub-php.js [L]

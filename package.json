@@ -1,0 +1,27 @@
+{
+  "name": "utility-bar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ub.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncstate/utility-bar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncstate/utility-bar/issues"
+  },
+  "homepage": "https://github.com/ncstate/utility-bar#readme",
+  "devDependencies": {
+    "laravel-mix": "^1.2.1"
+  }
+}

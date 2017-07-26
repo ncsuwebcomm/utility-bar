@@ -1,6 +1,6 @@
 // sass framework(s)
 
-@import "compass";
+@import "../lib/reset";
 
 // mixins & Variables
 
@@ -12,54 +12,51 @@
 
 // Centered container element
 @mixin container-fixed() {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left:  (30px / 2);
-  padding-right: (30px / 2);
-  // Bootstrap's clearfix
-	  &:before,
-	  &:after {
-	    content: " "; // 1
-	    display: table; // 2
-	  }
-	  &:after {
-	    clear: both;
-	  }
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:  (30px / 2);
+	padding-right: (30px / 2);
+	// Bootstrap's clearfix
+		&:before,
+		&:after {
+			content: " "; // 1
+			display: table; // 2
+		}
+		&:after {
+			clear: both;
+		}
+}
+
+@mixin clearfix {
+	overflow: hidden;
+	*zoom: 1;
 }
 
 // color schemes
+$default-primary-color: #000;
+$default-accent-color: #333;
+$default-resources-color: #c00;
+$default-text-color: #ffffff;
+$default-link-color: #AAA;
+$default-search-bg: $default-accent-color;
+$default-search-highlight: #1a1a1a;
 
-$color: black;
+$gray-primary-color: #333;
+$gray-accent-color: #1a1a1a;
+$gray-resources-color: #c00;
+$gray-text-color: $default-text-color;
+$gray-link-color: #999;
+$gray-search-bg: $gray-accent-color;
+$gray-search-highlight: #2b2b2b;
 
-	$primary-color: #000;
-	$accent-color: lighten($primary-color,20%);
-	$highlight-color: lighten($primary-color,10%);
-	$text-color: #ffffff;
-	$link-color: #999999;
-	$resources-color: #c00;
+$red-primary-color: #c00;
+$red-accent-color: #900;
+$red-resources-color: #333;
+$red-text-color: $default-text-color;
+$red-link-color: #ccc;
+$red-search-bg: $red-accent-color;
+$red-search-highlight: #bd0000;
 
-@if $color == gray{
-	$primary-color: #333;
-	$accent-color: darken($primary-color,10%);
-	$highlight-color: darken($primary-color,3%);
-	$resources-color: #c00;
-	// $search-txt: #000;
-	// $search-bg: #ccc;
-	// $search-highlight: #aaa;
-} @else if $color == red{
-	$primary-color: #cc0000;
-	$accent-color: darken($primary-color,10%);
-	$highlight-color: darken($primary-color,3%);
-	$link-color: #dddddd;
-	$resources-color: #333;
-	// $search-txt: #000;
-	// $search-bg: #ccc;
-	// $search-highlight: #aaa;
-}
-
-	$search-txt: $text-color;
-	$search-bg: $accent-color;
-	$search-highlight: $highlight-color;
 
 html { margin-top: 30px !important; }
 * html body { margin-top: 30px !important; } 
@@ -95,7 +92,7 @@ html { margin-top: 30px !important; }
 	width: 100%;
 	height: 30px;
 	
-	font-family: Univers, arial, sans-serif;
+	font-family: UniversRoman, arial, sans-serif;
 	font-size: 14px;
 	line-height: 1;
 
@@ -103,7 +100,7 @@ html { margin-top: 30px !important; }
 	overflow: visible;
 	
 	a{
-		color: $text-color;
+		color: $default-text-color;
 		text-decoration: none;
 	}
 	
@@ -121,7 +118,7 @@ html { margin-top: 30px !important; }
 		height: 30px;
 		z-index: 99999;
 
-		background: $primary-color;
+		background: $default-primary-color;
 	}
 	
 
@@ -151,12 +148,12 @@ html { margin-top: 30px !important; }
 	.ncstate-utility-bar-links{
 		
 		letter-spacing: 0.02em;
-		background: $accent-color;
+		background: $default-accent-color;
 		padding: 0 10px;
 		overflow: auto;
-		@include transition-property(all);
-		@include transition-duration(.5s);
-		@include translate(0, 0);
+		transition-property: all;
+		transition-duration: .5s;
+		transform: translate(0, 0);
 		z-index: 99998;
 		position: relative;
 		top: 30px;
@@ -164,7 +161,7 @@ html { margin-top: 30px !important; }
 
 		&.is-hidden{
 		
-			@include translate(0, -100%);
+			transform: translate(0, -100%);
 		
 		}
 		
@@ -189,7 +186,7 @@ html { margin-top: 30px !important; }
 					background-repeat: no-repeat;
 					background-position: left 20px;
 					background-size: 2em;
-					padding-left: 2.75em;					
+					padding-left: 2.75em;
 				}
 				
 				&.ncstate-utility-bar-mypack {
@@ -219,7 +216,7 @@ html { margin-top: 30px !important; }
 			}
 
 			&.accomodate-brick{
-				padding-top:30px;
+				
 			}
 		}
 		
@@ -244,7 +241,7 @@ html { margin-top: 30px !important; }
 			line-height: 1.6em;
 			
 			dt{
-				color: $text-color;
+				color: $default-text-color;
 				padding-bottom: .5em;
 				ul li:before {display: none;}
 				text-transform: uppercase;
@@ -257,7 +254,7 @@ html { margin-top: 30px !important; }
 		
 			dd{
 				font-weight: lighter;
-				a {color: $link-color;}
+				a {color: $default-link-color;}
 				a:hover{text-decoration: underline;}
 				ul li:before {display: none;}
 			}
@@ -272,33 +269,17 @@ html { margin-top: 30px !important; }
 		
 		float: left;
 
-		a{
+		a {
 			display: block;
 			padding: 8px 14px 8px 28px;
 			line-height: 14px;
-		}
-
-		&.show-brick{
-			background-image:url("https://cdn.ncsu.edu/brand-assets/utility-bar/img/ncstate-brick-2x2-red.jpg");
-			background-repeat:no-repeat;
-			background-size:contain;
-			height:60px;
-
-			a{
-				color:transparent;
-				height:60px;
-			}
-		}
-		&.no-brick{
-			a{
-				background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBzdHlsZT0iZmlsbDogI2ZmZjsiIHBvaW50cz0iNDkuNDc3LDg1LjY3NiA5MC41MDgsMTI2LjcwOSAxMDQuMTg2LDExMy4wMyA2My4xNTMsNzEuOTk4IDEwNC4xODYsMzAuOTY2IDkwLjUwOCwxNy4yOSAzNS43OTksNzEuOTk4ICIvPgo8L3N2Zz4K);
-				background-repeat: no-repeat;
-				background-position: left;
-				background-size: 1.2em;
-			
-				&:hover{
-					background-color: $accent-color;
-				}
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBzdHlsZT0iZmlsbDogI2ZmZjsiIHBvaW50cz0iNDkuNDc3LDg1LjY3NiA5MC41MDgsMTI2LjcwOSAxMDQuMTg2LDExMy4wMyA2My4xNTMsNzEuOTk4IDEwNC4xODYsMzAuOTY2IDkwLjUwOCwxNy4yOSAzNS43OTksNzEuOTk4ICIvPgo8L3N2Zz4K);
+			background-repeat: no-repeat;
+			background-position: left;
+			background-size: 1.2em;
+		
+			&:hover{
+				background-color: $default-accent-color;
 			}
 		}
 	}
@@ -306,7 +287,6 @@ html { margin-top: 30px !important; }
 	// Search/toggle container
 	
 	.ncstate-utility-bar-options{
-		//background: $accent-color;
 		height: 30px;
 		position: absolute;
 		top: 0px;
@@ -319,7 +299,7 @@ html { margin-top: 30px !important; }
 
 		a{
 			display: block;
-			background-color: $resources-color;
+			background-color: $default-resources-color;
 			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiIGQ9Ik0yOC4zMjIsMjguNDM3VjQ1LjdoODcuMzU3VjI4LjQzN0gyOC4zMjJ6IE0yOC4zMjIsMTE1LjU2NGg4Ny4zNTdWOTguMzAySDI4LjMyMlYxMTUuNTY0eiBNMjguMzIyLDgwLjYzM2g4Ny4zNTdWNjMuMzY5CglIMjguMzIyVjgwLjYzM3oiLz4KPC9zdmc+Cg==);
 			background-repeat: no-repeat;
 			background-position: 90% 50%;
@@ -333,9 +313,9 @@ html { margin-top: 30px !important; }
 			padding: 8px 13px;
 		
 			&:hover{
-				background-color: darken($resources-color, 10%);
+				background-color: darken($default-resources-color, 10%);
 				& + .indicator {
-					border-top: 8px solid darken($resources-color, 10%);
+					border-top: 8px solid darken($default-resources-color, 10%);
 				}
 			}
 		}
@@ -345,7 +325,7 @@ html { margin-top: 30px !important; }
 			height: 0;
 			border-left: 8px solid transparent;
 			border-right: 8px solid transparent;
-			border-top: 8px solid $resources-color;
+			border-top: 8px solid $default-resources-color;
 			margin: 0 auto -0.5em;
 			display: none;
 		}
@@ -357,19 +337,15 @@ html { margin-top: 30px !important; }
 		@include clearfix;
 	
 		float: left;
-		background: $search-bg;
+		background: $default-search-bg;
 	
 	}
 	
 	.ncstate-utility-bar-search-submit{
 		
 		float: left;
-		background-color: $search-bg;
-		//@if $color == black{
-			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiIGQ9Ik0xMjUuNDA5LDExMi4zODFMOTMuMjk2LDgwLjI2OWM0LjE4MS02LjQ5Myw2LjQzMS0xNC4wNTEsNi40My0yMS45NTVjMC4wMDEtMTAuODY0LTQuMjMtMjEuMDc5LTExLjkxNC0yOC43NgoJQzgwLjEzLDIxLjg3LDY5LjkxNywxNy42NCw1OS4wNTIsMTcuNjRzLTIxLjA3OSw0LjIzLTI4Ljc2MSwxMS45MTRjLTcuNjgzLDcuNjgxLTExLjkxNCwxNy44OTYtMTEuOTEzLDI4Ljc2CgljLTAuMDAxLDEwLjg2NCw0LjIzLDIxLjA3OCwxMS45MTMsMjguNzYxYzcuNjgyLDcuNjgzLDE3Ljg5NywxMS45MTMsMjguNzYxLDExLjkxM2M3LjkwNiwwLDE1LjQ2LTIuMjUsMjEuOTUzLTYuNDMxbDMyLjExMywzMi4xMTUKCUwxMjUuNDA5LDExMi4zODF6IE0zOS45OTQsNzcuMzcxYy01LjA5LTUuMDkxLTcuODk0LTExLjg1OS03Ljg5NC0xOS4wNThjMC03LjIsMi44MDQtMTMuOTY3LDcuODk0LTE5LjA1NwoJYzUuMDkxLTUuMDksMTEuODU4LTcuODk1LDE5LjA1OC03Ljg5NWM3LjE5OCwwLDEzLjk2NSwyLjgwNSwxOS4wNTcsNy44OTVjNS4wOTEsNS4wOSw3Ljg5NCwxMS44NTcsNy44OTQsMTkuMDU3CgljMCw3LjE5OS0yLjgwMywxMy45NjctNy44OTQsMTkuMDU4Yy01LjA5MSw1LjA5LTExLjg1OCw3Ljg5NS0xOS4wNTcsNy44OTVDNTEuODUzLDg1LjI2Niw0NS4wODUsODIuNDYxLDM5Ljk5NCw3Ny4zNzF6Ii8+Cjwvc3ZnPgo=);
-		//}@else{
-		// 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KICAgd2lkdGg9IjE0NHB4IiBoZWlnaHQ9IjE0NHB4IiB2aWV3Qm94PSIwIDAgMTQ0IDE0NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQ0IDE0NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBzdHlsZT0iZmlsbDogIzAwMDsiIGQ9Ik0xMjUuNDA5LDExMi4zODFMOTMuMjk2LDgwLjI2OWM0LjE4MS02LjQ5Myw2LjQzMS0xNC4wNTEsNi40My0yMS45NTVjMC4wMDEtMTAuODY0LTQuMjMtMjEuMDc5LTExLjkxNC0yOC43Ng0KICBDODAuMTMsMjEuODcsNjkuOTE3LDE3LjY0LDU5LjA1MiwxNy42NHMtMjEuMDc5LDQuMjMtMjguNzYxLDExLjkxNGMtNy42ODMsNy42ODEtMTEuOTE0LDE3Ljg5Ni0xMS45MTMsMjguNzYNCiAgYy0wLjAwMSwxMC44NjQsNC4yMywyMS4wNzgsMTEuOTEzLDI4Ljc2MWM3LjY4Miw3LjY4MywxNy44OTcsMTEuOTEzLDI4Ljc2MSwxMS45MTNjNy45MDYsMCwxNS40Ni0yLjI1LDIxLjk1My02LjQzMWwzMi4xMTMsMzIuMTE1DQogIEwxMjUuNDA5LDExMi4zODF6IE0zOS45OTQsNzcuMzcxYy01LjA5LTUuMDkxLTcuODk0LTExLjg1OS03Ljg5NC0xOS4wNThjMC03LjIsMi44MDQtMTMuOTY3LDcuODk0LTE5LjA1Nw0KICBjNS4wOTEtNS4wOSwxMS44NTgtNy44OTUsMTkuMDU4LTcuODk1YzcuMTk4LDAsMTMuOTY1LDIuODA1LDE5LjA1Nyw3Ljg5NWM1LjA5MSw1LjA5LDcuODk0LDExLjg1Nyw3Ljg5NCwxOS4wNTcNCiAgYzAsNy4xOTktMi44MDMsMTMuOTY3LTcuODk0LDE5LjA1OGMtNS4wOTEsNS4wOS0xMS44NTgsNy44OTUtMTkuMDU3LDcuODk1QzUxLjg1Myw4NS4yNjYsNDUuMDg1LDgyLjQ2MSwzOS45OTQsNzcuMzcxeiIvPg0KPC9zdmc+DQo=);
-		// //}
+		background-color: $default-search-bg;
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNDRweCIgaGVpZ2h0PSIxNDRweCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE0NCAxNDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDogI2ZmZjsiIGQ9Ik0xMjUuNDA5LDExMi4zODFMOTMuMjk2LDgwLjI2OWM0LjE4MS02LjQ5Myw2LjQzMS0xNC4wNTEsNi40My0yMS45NTVjMC4wMDEtMTAuODY0LTQuMjMtMjEuMDc5LTExLjkxNC0yOC43NgoJQzgwLjEzLDIxLjg3LDY5LjkxNywxNy42NCw1OS4wNTIsMTcuNjRzLTIxLjA3OSw0LjIzLTI4Ljc2MSwxMS45MTRjLTcuNjgzLDcuNjgxLTExLjkxNCwxNy44OTYtMTEuOTEzLDI4Ljc2CgljLTAuMDAxLDEwLjg2NCw0LjIzLDIxLjA3OCwxMS45MTMsMjguNzYxYzcuNjgyLDcuNjgzLDE3Ljg5NywxMS45MTMsMjguNzYxLDExLjkxM2M3LjkwNiwwLDE1LjQ2LTIuMjUsMjEuOTUzLTYuNDMxbDMyLjExMywzMi4xMTUKCUwxMjUuNDA5LDExMi4zODF6IE0zOS45OTQsNzcuMzcxYy01LjA5LTUuMDkxLTcuODk0LTExLjg1OS03Ljg5NC0xOS4wNThjMC03LjIsMi44MDQtMTMuOTY3LDcuODk0LTE5LjA1NwoJYzUuMDkxLTUuMDksMTEuODU4LTcuODk1LDE5LjA1OC03Ljg5NWM3LjE5OCwwLDEzLjk2NSwyLjgwNSwxOS4wNTcsNy44OTVjNS4wOTEsNS4wOSw3Ljg5NCwxMS44NTcsNy44OTQsMTkuMDU3CgljMCw3LjE5OS0yLjgwMywxMy45NjctNy44OTQsMTkuMDU4Yy01LjA5MSw1LjA5LTExLjg1OCw3Ljg5NS0xOS4wNTcsNy44OTVDNTEuODUzLDg1LjI2Niw0NS4wODUsODIuNDYxLDM5Ljk5NCw3Ny4zNzF6Ii8+Cjwvc3ZnPgo=);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 1.3em;
@@ -377,12 +353,12 @@ html { margin-top: 30px !important; }
 		width: 30px;
 		height: 30px;
 		padding: 0px;
-		@include border-radius(0px); /* Make corners not round */
+		border-radius: 0px; /* Make corners not round */
 		-webkit-appearance: none; /* Make corners not round */
 	
 		&:hover{
 			cursor: pointer;
-			background-color: $search-highlight;
+			background-color: $default-search-highlight;
 		}
 	
 		@include hideText;
@@ -390,11 +366,11 @@ html { margin-top: 30px !important; }
 	
 	.ncstate-utility-bar-search-field{
 		float: left;
-		@include border-radius(0px); /* Make corners not round */
+		border-radius: 0px; /* Make corners not round */
 		-webkit-appearance: none; /* Make corners not round */
-		background-color: $search-bg;
+		background-color: $default-search-bg;
 		border: none;
-		color: $search-txt;
+		color: $default-text-color;
 		font-size: 13px;
 		width: 150px;
 		padding: 6px;
@@ -407,13 +383,13 @@ html { margin-top: 30px !important; }
 		top: 30px;
 		right: 0;
 		
-		&::-webkit-input-placeholder{color: $search-txt;}
-		&:-moz-placeholder{color: $search-txt;}
-		&::-moz-placeholder{color: $search-txt;}
-		&:-ms-input-placeholder{color: $search-txt;}
+		&::-webkit-input-placeholder{color: $default-text-color;}
+		&:-moz-placeholder{color: $default-text-color;}
+		&::-moz-placeholder{color: $default-text-color;}
+		&:-ms-input-placeholder{color: $default-text-color;}
 		
 		&:focus{ 
-			background-color: $search-highlight;
+			background-color: $default-search-highlight;
 			&::-webkit-input-placeholder{transition: opacity 0.5s ease; opacity: 0;}
 			&:-moz-placeholder{transition: opacity 0.5s ease; opacity: 0;}
 			&::-moz-placeholder{transition: opacity 0.5s ease; opacity: 0;}
@@ -432,7 +408,7 @@ html { margin-top: 30px !important; }
 		
 		.ncstate-utility-bar-links{
 			overflow: auto;
-			@include transition-duration(.4s);
+			transition-duration: .4s;
 			dl{
 				width: 50%;
 				display: inline-block;
@@ -483,7 +459,7 @@ html { margin-top: 30px !important; }
 	.ncstate-utility-bar {
 		
 		.ncstate-utility-bar-links {
-			@include transition-duration(.3s);
+			transition-duration: .3s;
 			dl{
 				width: 25%;
 				display: inline-block;
@@ -516,5 +492,100 @@ html { margin-top: 30px !important; }
 		}
 		}
 		
+	}
+}
+
+.ncstate-utility-bar.gray {
+
+	.ncstate-utility-bar-tools { background: $gray-primary-color; }
+
+	.ncstate-utility-bar-links {
+		background: $gray-accent-color;
+	}
+
+	.ncstate-utility-bar-toggle {
+		a { 
+			background-color: $gray-resources-color;
+
+			&:hover {
+				background-color: darken($gray-resources-color, 10%);
+				& + .indicator {
+					border-top: 8px solid darken($gray-resources-color, 10%);
+				}
+			}
+		}
+
+		.indicator { border-top: 8px solid $gray-resources-color; }
+	}
+
+	.ncstate-utility-bar-search { background: $gray-search-bg; }
+
+	.ncstate-utility-bar-search-submit { 
+		background-color: $gray-search-bg;
+		&:hover { background-color: $gray-search-highlight; }
+	}
+
+	.ncstate-utility-bar-search-field {
+		background-color: $gray-search-bg;
+		&:focus{background-color: $gray-search-highlight;}
+	}
+	
+	&:not(.show-brick) .ncstate-utility-bar-home a:hover { background-color: $gray-accent-color; }
+}
+
+.ncstate-utility-bar.red {
+
+	.ncstate-utility-bar-tools { background: $red-primary-color; }
+
+	.ncstate-utility-bar-links {
+		background: $red-accent-color;
+		dl dd a {color: $red-link-color;}
+	}
+
+	.ncstate-utility-bar-toggle {
+		a { 
+			background-color: $red-resources-color;
+
+			&:hover {
+				background-color: darken($red-resources-color, 10%);
+				& + .indicator {
+					border-top: 8px solid darken($red-resources-color, 10%);
+				}
+			}
+		}
+
+		.indicator { border-top: 8px solid $red-resources-color; }
+	}
+
+	.ncstate-utility-bar-search { background: $red-search-bg; }
+
+	.ncstate-utility-bar-search-submit { 
+		background-color: $red-search-bg;
+		&:hover { background-color: $red-search-highlight; }
+	}
+
+	.ncstate-utility-bar-search-field {
+		background-color: $red-search-bg;
+		&:focus{background-color: $red-search-highlight;}
+	}
+
+	&:not(.show-brick) .ncstate-utility-bar-home a:hover { background-color: $red-accent-color; }
+}
+
+.ncstate-utility-bar.show-brick {
+	.ncstate-utility-bar-home a {
+		background-image:url("https://cdn.ncsu.edu/brand-assets/utility-bar/img/ncstate-brick-2x2-red.jpg");
+		background-repeat:no-repeat;
+		background-size:contain;
+		height:60px;
+		color:transparent;
+		height:60px;
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+	ul.ncstate-utility-bar-primary-util {
+		padding-top:30px;
 	}
 }
