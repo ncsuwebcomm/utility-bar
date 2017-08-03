@@ -63,7 +63,7 @@ html { margin-top: 30px !important; }
 
 // main Styles 
 
-.ncstate-utility-bar {
+#ncstate-utility-bar {
 
 	// Eric Meyer reset 
 	
@@ -404,7 +404,7 @@ html { margin-top: 30px !important; }
 
 @media screen and (min-width: 500px) {
 	
-	.ncstate-utility-bar {
+	#ncstate-utility-bar {
 		
 		.ncstate-utility-bar-links{
 			overflow: auto;
@@ -456,7 +456,7 @@ html { margin-top: 30px !important; }
 
 @media screen and (min-width: 800px) {
 	
-	.ncstate-utility-bar {
+	#ncstate-utility-bar {
 		
 		.ncstate-utility-bar-links {
 			transition-duration: .3s;
@@ -495,7 +495,7 @@ html { margin-top: 30px !important; }
 	}
 }
 
-.ncstate-utility-bar.gray {
+#ncstate-utility-bar.gray {
 
 	.ncstate-utility-bar-tools { background: $gray-primary-color; }
 
@@ -533,7 +533,7 @@ html { margin-top: 30px !important; }
 	&:not(.show-brick) .ncstate-utility-bar-home a:hover { background-color: $gray-accent-color; }
 }
 
-.ncstate-utility-bar.red {
+#ncstate-utility-bar.red {
 
 	.ncstate-utility-bar-tools { background: $red-primary-color; }
 
@@ -572,7 +572,7 @@ html { margin-top: 30px !important; }
 	&:not(.show-brick) .ncstate-utility-bar-home a:hover { background-color: $red-accent-color; }
 }
 
-.ncstate-utility-bar.show-brick {
+#ncstate-utility-bar.show-brick {
 	.ncstate-utility-bar-home a {
 		background-image:url("https://cdn.ncsu.edu/brand-assets/utility-bar/img/ncstate-brick-2x2-red.jpg");
 		background-repeat:no-repeat;
