@@ -38,11 +38,19 @@ export default class UtilityBar {
             options.placeholder = decodeURIComponent(options.placeholder.replace(/\+/g, ' '));
             // Strip illegal characters
             options.placeholder = options.placeholder.replace(/[\"\'\`\<\>]/g, '');
+
+            if (options.placeholder.length < 1) {
+                delete options.placeholder;
+            }
         }
 
         if (options.hasOwnProperty('googleCustomSearchCode')) {
             // Strip illegal characters
             options.googleCustomSearchCode = options.googleCustomSearchCode.replace(/[\"\'\`\<\>]/g, '');
+
+            if (options.googleCustomSearchCode.length < 1) {
+                delete options.googleCustomSearchCode;
+            }
         }
 
         return options;
