@@ -23,5 +23,8 @@
   "homepage": "https://github.com/ncstate/utility-bar#readme",
   "devDependencies": {
     "laravel-mix": "^1.2.1"
+  },
+  "dependencies": {
+    "es6-object-assign": "^1.1.0"
   }
 }

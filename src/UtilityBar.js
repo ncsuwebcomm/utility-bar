@@ -1,5 +1,6 @@
 import BarFactory from './BarFactory';
 import BaseCss from './main.scss';
+import 'es6-object-assign/auto';
 
 export default class UtilityBar {
 
