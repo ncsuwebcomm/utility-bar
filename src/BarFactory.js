@@ -3,8 +3,11 @@ import Template from './template.html';
 export default class BarFactory {
     constructor(options) {
         this.options = options;
-        this.bar = document.createRange().createContextualFragment(this.markup);
         this.classes = [this.options.color];
+
+        var temp = document.createElement('div');
+        temp.innerHTML = this.markup;
+        this.bar = temp.firstChild;
 
         // Add custom search if needed
         if (this.options.googleCustomSearchCode !== null) {
