@@ -24,7 +24,7 @@ export default class BarFactory {
         }
 
         this.classes.forEach(classname => {
-            this.bar.firstChild.className += ` ${classname}`;
+            this.bar.className += ` ${classname}`;
         });
 
         return this.bar;
