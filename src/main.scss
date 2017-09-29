@@ -383,10 +383,10 @@ html { margin-top: 30px !important; }
 		top: 30px;
 		right: 0;
 		
-		&::-webkit-input-placeholder{color: $default-text-color;}
-		&:-moz-placeholder{color: $default-text-color;}
-		&::-moz-placeholder{color: $default-text-color;}
-		&:-ms-input-placeholder{color: $default-text-color;}
+		&::-webkit-input-placeholder{color: $default-text-color; font-size:13px;}
+		&:-moz-placeholder{color: $default-text-color; font-size:13px;}
+		&::-moz-placeholder{color: $default-text-color; font-size:13px;}
+		&:-ms-input-placeholder{color: $default-text-color; font-size:13px;}
 		
 		&:focus{ 
 			background-color: $default-search-highlight;
