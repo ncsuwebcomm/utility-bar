@@ -18,7 +18,7 @@ class loadUb {
         }
 
         window._ub = new UtilityBar(this.options);
-        window.addEventListener('load', () => {
+        window.addEventListener('DOMContentLoaded', () => {
             window._ub.render();
         }, false);
     }
