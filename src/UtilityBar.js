@@ -69,7 +69,7 @@ export default class UtilityBar {
             documentBody.insertBefore(this.bar, documentBody.firstChild);
         }
 
-        this.insertBarJs();
+        this.initBarControls();
     }
 
     insertCss() {
@@ -89,14 +89,58 @@ export default class UtilityBar {
         }
     }
 
-    insertBarJs() {
-        let scripts = document.getElementsByTagName('script')[0];
-        let barjs = document.createElement('script');
-        barjs.type = 'text/javascript';
-        barjs.async = true;
-        barjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ncsu.edu/brand-assets/utility-bar/js/main.js';
+    initBarControls() {
+        this.toggleBtn = document.getElementById('ncstate-utility-bar-toggle-link'),
+        this.linksPanel = document.getElementsByClassName('ncstate-utility-bar-links')[0],
+        this.firstLink = document.getElementById('ncstate-utility-bar-first-link'),
+        this.hiddenClassPattern = /\bis-hidden\b/g,
+        this.toggleState = 'hidden';
 
-        scripts.parentNode.insertBefore(barjs, scripts);
+        this.toggleBtn.addEventListener('click', this.handleToggleButton, false);
+        this.toggleBtn.addEventListener('keydown', this.handleTabbedNavigation, false);
+        this.linksPanel.addEventListener('transitionend', this.handleTransitionEnd, false);
+    }
+
+    toggleLinksPanel() {
+        if ( this.toggleState === 'hidden' ) {
+            this.linksPanel.style.display = "block";
+            this.toggleBtn.nextElementSibling.style.display = "block";
+            setTimeout( () => {
+                this.linksPanel.className = this.linksPanel.className.replace(this.hiddenClassPattern,'');
+            }, 10);
+            this.toggleState = 'visible';
+        } else {
+            this.toggleBtn.nextElementSibling.style.display = "none";
+            this.linksPanel.className = this.linksPanel.className + 'is-hidden';
+            this.toggleState = 'hidden';
+        }
+    }
+
+    handleToggleButton(e) {
+        e.preventDefault();
+        window._ub.toggleLinksPanel();
+    }
+
+    handleTabbedNavigation(e) {
+        let key = e.which || e.keyCode;
+
+        if (key === 13) {
+            e.preventDefault();
+            window._ub.toggleLinksPanel();
+        }
+
+        if (window._ub.toggleState === 'visible') {
+            e.preventDefault();
+            window._ub.firstLink.focus();
+        } else {
+            window._ub.toggleBtn.focus();
+        }
+    }
+
+    handleTransitionEnd() {
+        if ( window._ub.toggleState === 'hidden' ) {
+            window._ub.linksPanel.style.display = "none";
+        }
     }
 
     get defaults() {

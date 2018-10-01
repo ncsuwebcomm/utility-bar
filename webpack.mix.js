@@ -28,8 +28,7 @@ mix.webpackConfig({
     }
 })
 
-mix.js('src/ub-php.js', 'dist')
-   .js('src/main.js', 'dist');
+mix.js('src/ub-php.js', 'dist');
 
 // Full API
 // mix.js(src, output);
