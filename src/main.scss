@@ -304,9 +304,9 @@ html { margin-top: $ub-height !important; }
 		margin-left: auto;
 
 		.wolficon {
-			height: 1.1em;
-			width: 1.1em;
-			vertical-align: -0.125em;
+			height: 1.2em;
+			width: 1.2em;
+			vertical-align: -0.25em;
 			fill: currentColor;
 			display: inline-block;
 		}
@@ -331,7 +331,7 @@ html { margin-top: $ub-height !important; }
 		}
 
 		.ncstate-utility-bar-toggle-link-text {
-			margin-right: 4px;
+			margin-right: 5px;
 		}
 
 		.indicator {
@@ -353,12 +353,10 @@ html { margin-top: $ub-height !important; }
 		border: none;
 		border-radius: 0;
 		text-align: left;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		font-weight: 700;
+		font-size: 0.9em;
 		padding: 0 12px;
-		min-width: 100px;
+		line-height: 36px;
 
 		&:hover {
 			background-color: $default-search-highlight;
@@ -366,7 +364,7 @@ html { margin-top: $ub-height !important; }
 		}
 
 		.ncstate-utility-bar-search-text {
-			margin-right: 12px;
+			margin-right: 5px;
 		}
 	}
 }
