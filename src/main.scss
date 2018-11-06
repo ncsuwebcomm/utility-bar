@@ -43,6 +43,8 @@
 	*zoom: 1;
 }
 
+$ub-height: 36px;
+
 // color schemes
 $default-primary-color: #000;
 $default-accent-color: #333;
@@ -69,8 +71,8 @@ $red-search-bg: $red-accent-color;
 $red-search-highlight: #bd0000;
 
 
-html { margin-top: 30px !important; }
-* html body { margin-top: 30px !important; } 
+html { margin-top: $ub-height !important; }
+* html body { margin-top: $ub-height !important; } 
 
 // main Styles 
 
@@ -101,7 +103,7 @@ html { margin-top: 30px !important; }
 	left: 0px;
 	right: 0px;
 	width: 100%;
-	height: 30px;
+	height: $ub-height;
 	
 	font-family: UniversRoman, arial, sans-serif;
 	font-size: 14px;
@@ -126,7 +128,7 @@ html { margin-top: 30px !important; }
 		left: 0px;
 		right: 0px;
 		width: 100%;
-		height: 30px;
+		height: $ub-height;
 		z-index: 99999;
 
 		background: $default-primary-color;
@@ -150,7 +152,6 @@ html { margin-top: 30px !important; }
 	}
 
 	.ncstate-utility-bar-wrapper-primary{
-		height: 30px;
 		position: relative;
 	}
 	
@@ -167,7 +168,7 @@ html { margin-top: 30px !important; }
 		transform: translate(0, 0);
 		z-index: 99998;
 		position: relative;
-		top: 30px;
+		top: $ub-height;
 		display: none;
 
 		&.is-hidden{
@@ -298,10 +299,10 @@ html { margin-top: 30px !important; }
 	// Search/toggle container
 	
 	.ncstate-utility-bar-options{
-		height: 30px;
 		position: absolute;
 		top: 0px;
 		right: 0px;
+		height: $ub-height;
 	}
 
 	.ncstate-utility-bar-toggle{
@@ -316,7 +317,7 @@ html { margin-top: 30px !important; }
 			background-position: 90% 50%;
 			background-size: 1.78572em;
 			width: 120px;
-			height: 30px;
+			height: $ub-height;
 			text-transform: uppercase;
 			font-size: 0.8em;
 			line-height: 14px;
@@ -597,6 +598,6 @@ html { margin-top: 30px !important; }
 	}
 
 	ul.ncstate-utility-bar-primary-util {
-		padding-top:30px;
+		padding-top:$ub-height;
 	}
 }
