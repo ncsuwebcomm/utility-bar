@@ -90,56 +90,99 @@ export default class UtilityBar {
     }
 
     initBarControls() {
-        this.toggleBtn = document.getElementById('ncstate-utility-bar-toggle-link'),
-        this.linksPanel = document.getElementsByClassName('ncstate-utility-bar-links')[0],
-        this.firstLink = document.getElementById('ncstate-utility-bar-first-link'),
-        this.hiddenClassPattern = /\bis-hidden\b/g,
-        this.toggleState = 'hidden';
+        this.resourcesToggleBtn = document.getElementById('ncstate-utility-bar-toggle-link'),
+        this.searchToggleBtn = document.getElementById('ncstate-utility-bar-search-btn'),
 
-        this.toggleBtn.addEventListener('click', this.handleToggleButton, false);
-        this.toggleBtn.addEventListener('keydown', this.handleTabbedNavigation, false);
+        this.linksPanel = document.getElementsByClassName('ncstate-utility-bar-links')[0],
+        this.searchDialog = document.getElementsByClassName('ncstate-utility-bar-search-dialog')[0],
+
+        this.searchInput = document.getElementsByClassName('ncstate-utility-bar-search-field')[0],
+        this.firstLink = document.getElementById('ncstate-utility-bar-first-link'),
+
+        this.hiddenClassPattern = /\bis-hidden\b/g,
+        this.resourceToggleState = 'hidden';
+        this.searchToggleState = 'hidden';
+
+        this.resourcesToggleBtn.addEventListener('click', this.handleResourcesToggleButton.bind(this), false);
+        this.resourcesToggleBtn.addEventListener('keydown', this.handleResourcesTabbedNavigation.bind(this), false);
+
+        this.searchToggleBtn.addEventListener('click', this.handleSearchToggleButton.bind(this), false);
+
         this.linksPanel.addEventListener('transitionend', this.handleTransitionEnd, false);
+        this.searchDialog.addEventListener('transitionend', this.handleTransitionEnd, false);
     }
 
     toggleLinksPanel() {
-        if ( this.toggleState === 'hidden' ) {
+        if ( this.resourceToggleState === 'hidden' ) {
             this.linksPanel.style.display = "block";
-            this.toggleBtn.nextElementSibling.style.display = "block";
+            this.resourcesToggleBtn.nextElementSibling.style.display = "block";
             setTimeout( () => {
                 this.linksPanel.className = this.linksPanel.className.replace(this.hiddenClassPattern,'');
             }, 10);
-            this.toggleState = 'visible';
+            this.resourceToggleState = 'visible';
         } else {
-            this.toggleBtn.nextElementSibling.style.display = "none";
-            this.linksPanel.className = this.linksPanel.className + 'is-hidden';
-            this.toggleState = 'hidden';
+            this.resourcesToggleBtn.nextElementSibling.style.display = "none";
+            this.linksPanel.className = this.linksPanel.className + ' is-hidden';
+            this.resourceToggleState = 'hidden';
         }
     }
 
-    handleToggleButton(e) {
+    toggleSearchDialog() {
+        if ( this.searchToggleState === 'hidden' ) {
+            this.searchDialog.style.display = "flex";
+            setTimeout( () => {
+                this.searchDialog.className = this.searchDialog.className.replace(this.hiddenClassPattern,'');
+            }, 10);
+            this.searchToggleState = 'visible';
+
+            window._ub.searchInput.focus();
+        } else {
+            this.searchDialog.className = this.searchDialog.className + ' is-hidden';
+            this.searchToggleState = 'hidden';
+        }
+    }
+
+    handleResourcesToggleButton(e) {
         e.preventDefault();
+
+        if ( this.searchToggleState == "visible" ) {
+            window._ub.toggleSearchDialog();
+        }
+
         window._ub.toggleLinksPanel();
     }
 
-    handleTabbedNavigation(e) {
+    handleSearchToggleButton(e) {
+        e.preventDefault();
+
+        if ( this.resourceToggleState == "visible" ) {
+            window._ub.toggleLinksPanel();
+        }
+
+        window._ub.toggleSearchDialog();
+    }
+
+    handleResourcesTabbedNavigation(e) {
         let key = e.which || e.keyCode;
 
         if (key === 13) {
             e.preventDefault();
-            window._ub.toggleLinksPanel();
+            this.handleResourcesToggleButton(e);
         }
 
-        if (window._ub.toggleState === 'visible') {
+        if (this.resourceToggleState === 'visible') {
+           this.firstLink.focus();
             e.preventDefault();
-            window._ub.firstLink.focus();
         } else {
-            window._ub.toggleBtn.focus();
+            this.resourcesToggleBtn.focus();
         }
     }
 
     handleTransitionEnd() {
-        if ( window._ub.toggleState === 'hidden' ) {
+        if ( window._ub.resourceToggleState === 'hidden' ) {
             window._ub.linksPanel.style.display = "none";
+        } else if ( window._ub.searchToggleState === 'hidden' ) {
+            window._ub.searchDialog.style.display = "none";
         }
     }
 
@@ -148,7 +191,7 @@ export default class UtilityBar {
             googleCustomSearchCode: null,
             color: 'gray',
             maxWidth: null,
-            placeholder: 'search ncsu.edu',
+            placeholder: 'NC State',
             showBrick: 0
         }
     }

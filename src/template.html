@@ -10,8 +10,8 @@
                     </a>
                     <div class="indicator"></div>
                 </div>
-                <button class="ncstate-utility-bar-search" role="search">
-                    <span class="ncstate-utility-bar-search-text">Search<span class="ncstate-utility-bar-custom-search-text"> ${this.options.placeholder}</span></span>
+                <button id="ncstate-utility-bar-search-btn" role="search">
+                    <span class="ncstate-utility-bar-search-btn-text">Search<span class="ncstate-utility-bar-custom-search-text"> ${this.options.placeholder}</span></span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="wolficon wolficon-search" aria-hidden="true" viewBox="0 0 512 512"><path d="M448.51,404.55,333.31,288.34A145.95,145.95,0,0,0,210,64a144.36,144.36,0,0,0-103.07,42.44A142.93,142.93,0,0,0,63.49,209.52c0,39.41,15.16,75.79,43.45,104.08a145.92,145.92,0,0,0,181.89,19.2L404,448ZM141.31,278.23a96.36,96.36,0,0,1,0-136.42c18.19-19.2,42.44-28.29,68.72-28.29s50.53,9.09,68.72,28.29A96.82,96.82,0,0,1,141.31,278.23Z"/></svg>
                 </button>
             </div>
@@ -80,5 +80,17 @@
                 </dl>
             </div>
         </div>
+    </div>
+    <div class="ncstate-utility-bar-search-dialog is-hidden">
+        <form class="ncstate-utility-bar-search-form" action="https://www.ncsu.edu/search" name="navsearchform">
+            <label>
+                <span class="ncstate-utility-bar-search-label">Search ${this.options.placeholder}</span>
+                <input type="search" class="ncstate-utility-bar-search-field" placeholder="Search ${this.options.placeholder}" name="q" />
+            </label>
+            <button type="submit" class="ncstate-utility-bar-search-submit">
+                <span class="ncstate-utility-bar-search-label">Search</span>
+                <svg class="wolficon wolficon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64,295.34H306.36L202.49,392.92,256,448,448,256,256,64l-53.51,53.51,103.87,99.15H64Z"/></svg>
+            </button>
+        </form>
     </div>
 </div>
