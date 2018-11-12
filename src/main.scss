@@ -491,7 +491,7 @@ html { margin-top: $ub-height !important; }
 		.indicator { border-top: 8px solid $gray-resources-color; }
 	}
 
-	.ncstate-utility-bar-search { 
+	#ncstate-utility-bar-search-btn { 
 		background-color: $gray-search-bg;
 		&:hover { background-color: $gray-search-highlight; }
 	}
@@ -527,7 +527,7 @@ html { margin-top: $ub-height !important; }
 		.indicator { border-top: 8px solid $red-resources-color; }
 	}
 
-	.ncstate-utility-bar-search { 
+	#ncstate-utility-bar-search-btn { 
 		background-color: $red-search-bg;
 		&:hover { background-color: $red-search-highlight; }
 	}
