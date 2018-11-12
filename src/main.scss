@@ -349,12 +349,15 @@ html { margin-top: $ub-height !important; }
 			border: none;
 			outline: 0;
 			line-height: 1;
-			padding-right: 15px;
+			height: 1.35em;
+			padding: 0 15px 0 0;
 			font-weight: bold;
 			background-color: transparent;
 
-			&::placeholder {
-				line-height: 1;
+			&::placeholder,
+			&::-webkit-input-placeholder,
+			&::-ms-input-placeholder {
+				line-height: normal;
 				color: $default-text-color;
 				opacity: 1; /* Firefox */
 			}
@@ -564,7 +567,7 @@ html { margin-top: $ub-height !important; }
 }
 
 .ncstate-utility-bar-lock-scroll {
-	height: 100%;
-	overflow: hidden;
+	height: 100% !important;
+	overflow: hidden !important;
 	#ncstate-utility-bar { position: fixed; }
 }
