@@ -348,13 +348,13 @@ html { margin-top: $ub-height !important; }
 			color: $default-text-color;
 			border: none;
 			outline: 0;
-			height: 1.25em;
 			line-height: 1;
 			padding-right: 15px;
 			font-weight: bold;
 			background-color: transparent;
 
 			&::placeholder {
+				line-height: 1;
 				color: $default-text-color;
 				opacity: 1; /* Firefox */
 			}
@@ -554,4 +554,17 @@ html { margin-top: $ub-height !important; }
 	ul.ncstate-utility-bar-primary-util {
 		padding-top:$ub-height;
 	}
+}
+
+.ncstate-utility-bar-fixIOS #ncstate-utility-bar {
+	.ncstate-utility-bar-search-dialog {
+		align-items: flex-start;
+		padding-top: 20vh;
+	}
+}
+
+.ncstate-utility-bar-lock-scroll {
+	height: 100%;
+	overflow: hidden;
+	#ncstate-utility-bar { position: fixed; }
 }

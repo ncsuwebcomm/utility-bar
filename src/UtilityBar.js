@@ -90,6 +90,7 @@ export default class UtilityBar {
     }
 
     initBarControls() {
+
         this.resourcesToggleBtn = document.getElementById('ncstate-utility-bar-toggle-link'),
         this.searchToggleBtn = document.getElementById('ncstate-utility-bar-search-btn'),
 
@@ -100,8 +101,14 @@ export default class UtilityBar {
         this.firstLink = document.getElementById('ncstate-utility-bar-first-link'),
 
         this.hiddenClassPattern = /\bis-hidden\b/g,
-        this.resourceToggleState = 'hidden';
+        this.resourceToggleState = 'hidden',
         this.searchToggleState = 'hidden';
+
+        if ( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+            document.body.className = document.body.className + ' ncstate-utility-bar-fixIOS';
+        }
+
+        this.searchToggleBtn.addEventListener('click', this.preventScroll, false);
 
         this.resourcesToggleBtn.addEventListener('click', this.handleResourcesToggleButton.bind(this), false);
         this.resourcesToggleBtn.addEventListener('keydown', this.handleResourcesTabbedNavigation.bind(this), false);
@@ -110,6 +117,11 @@ export default class UtilityBar {
 
         this.linksPanel.addEventListener('transitionend', this.handleTransitionEnd, false);
         this.searchDialog.addEventListener('transitionend', this.handleTransitionEnd, false);
+    }
+
+    preventScroll() {
+        document.documentElement.classList.toggle("ncstate-utility-bar-lock-scroll")
+        document.body.classList.toggle("ncstate-utility-bar-lock-scroll");
     }
 
     toggleLinksPanel() {
