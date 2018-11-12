@@ -193,7 +193,9 @@ export default class UtilityBar {
     handleTransitionEnd() {
         if ( window._ub.resourceToggleState === 'hidden' ) {
             window._ub.linksPanel.style.display = "none";
-        } else if ( window._ub.searchToggleState === 'hidden' ) {
+        }
+
+        if ( window._ub.searchToggleState === 'hidden' ) {
             window._ub.searchDialog.style.display = "none";
         }
     }
