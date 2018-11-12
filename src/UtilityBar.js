@@ -196,6 +196,7 @@ export default class UtilityBar {
         }
 
         if ( window._ub.searchToggleState === 'hidden' ) {
+            window._ub.searchInput.value = '';
             window._ub.searchDialog.style.display = "none";
         }
     }
