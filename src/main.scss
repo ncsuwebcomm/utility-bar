@@ -315,13 +315,13 @@ html { margin-top: $ub-height !important; }
 		justify-content: center;
 		@include fluid-type(font-size, 320px, 1500px, 24px, 72px);
 		opacity: 1;
-		transform: scale(1, 1);
+		transform: translateY(0);
 		transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 		transform-origin: top right;
 
 		&.is-hidden {
 			opacity: 0;
-			transform: scale(0, 0);
+			transform: translateY(-100%);
 			.ncstate-utility-bar-search-form { opacity: 0; }
 		}
 
