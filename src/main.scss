@@ -343,6 +343,14 @@ html { margin-top: $ub-height !important; }
 				line-height: 1;
 				margin: 0;
 			}
+
+			svg.wolficon {
+				height: 1em;
+				width: 1em;
+				vertical-align: -.125em;
+				fill: currentColor;
+				display: inline-block;
+			}
 		}
 
 		.ncstate-utility-bar-search-field {
