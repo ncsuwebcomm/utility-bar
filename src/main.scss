@@ -310,8 +310,9 @@ html { margin-top: $ub-height !important; }
 		bottom: 0;
 		height: 100%;
 		width: 100%;
+		padding-top: 20vh;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		@include fluid-type(font-size, 320px, 1500px, 24px, 72px);
 		opacity: 1;
@@ -554,13 +555,6 @@ html { margin-top: $ub-height !important; }
 
 	ul.ncstate-utility-bar-primary-util {
 		padding-top:$ub-height;
-	}
-}
-
-.ncstate-utility-bar-fixIOS #ncstate-utility-bar {
-	.ncstate-utility-bar-search-dialog {
-		align-items: flex-start;
-		padding-top: 20vh;
 	}
 }
 

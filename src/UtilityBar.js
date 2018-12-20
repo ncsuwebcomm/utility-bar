@@ -104,10 +104,6 @@ export default class UtilityBar {
         this.resourceToggleState = 'hidden',
         this.searchToggleState = 'hidden';
 
-        if ( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-            document.body.className = document.body.className + ' ncstate-utility-bar-fixIOS';
-        }
-
         this.searchToggleBtn.addEventListener('click', this.preventScroll, false);
 
         this.resourcesToggleBtn.addEventListener('click', this.handleResourcesToggleButton.bind(this), false);
