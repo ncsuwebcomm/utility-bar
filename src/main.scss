@@ -375,7 +375,7 @@ html { margin-top: $ub-height !important; }
 
 // wider mobile devices & small tablets
 @media screen and (max-width: 499px){
-	.ncstate-utility-bar-toggle-link-text{
+	.ncstate-utility-bar-custom-search-text{
 		@include sr-only();
 	}
 }
@@ -424,7 +424,7 @@ html { margin-top: $ub-height !important; }
 }
 
 @media screen and (max-width: 799px){
-	.ncstate-utility-bar-custom-search-text{
+	.ncstate-utility-bar-toggle-link-text{
 		@include sr-only();
 	}
 }
@@ -498,7 +498,7 @@ html { margin-top: $ub-height !important; }
 	}
 
 	.ncstate-utility-bar-search-dialog {
-		background-color: $gray-accent-color;
+		background-color: $gray-search-bg;
 	}
 	
 	&:not(.show-brick) .ncstate-utility-bar-home a:hover { background-color: $gray-accent-color; }
