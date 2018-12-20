@@ -136,6 +136,8 @@ export default class UtilityBar {
     }
 
     toggleSearchDialog() {
+        window._ub.toggleSearchBtnText();
+
         if ( this.searchToggleState === 'hidden' ) {
             this.searchDialog.style.display = "flex";
             setTimeout( () => {
@@ -147,6 +149,27 @@ export default class UtilityBar {
         } else {
             this.searchDialog.className = this.searchDialog.className + ' is-hidden';
             this.searchToggleState = 'hidden';
+        }
+    }
+
+    toggleSearchBtnText() {
+        var closeTxt = this.searchToggleBtn.querySelector('.ncstate-utility-bar-search-close-text');
+        var closeIcon = this.searchToggleBtn.querySelector('.wolficon-close');
+        var showTxt = this.searchToggleBtn.querySelector('.ncstate-utility-bar-search-btn-text');
+        var showIcon = this.searchToggleBtn.querySelector('.wolficon-search');
+
+        if ( this.searchToggleState === 'hidden' ) {
+            this.searchToggleBtn.style.width = this.searchToggleBtn.offsetWidth + "px";
+            showTxt.style.display = "none";
+            showIcon.style.display = "none";
+            closeTxt.style.display = "inline";
+            closeIcon.style.display = "inline";
+        } else {
+            this.searchToggleBtn.style = "";
+            showTxt.style.display = "inline";
+            showIcon.style.display = "inline";
+            closeTxt.style.display = "none";
+            closeIcon.style.display = "none";
         }
     }
 

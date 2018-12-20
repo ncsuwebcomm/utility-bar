@@ -280,7 +280,7 @@ html { margin-top: $ub-height !important; }
 		background: $default-search-bg;
 		border: none;
 		border-radius: 0;
-		text-align: left;
+		text-align: center;
 		font-weight: 700;
 		font-size: 0.9em;
 		padding: 0 12px;
@@ -294,6 +294,11 @@ html { margin-top: $ub-height !important; }
 		.ncstate-utility-bar-search-btn-text {
 			margin-right: 5px;
 		}
+
+		.ncstate-utility-bar-search-close-text,
+		.wolficon-close {
+			display: none;
+		}
 	}
 
 	//****************
@@ -301,7 +306,6 @@ html { margin-top: $ub-height !important; }
 	//****************
 
 	.ncstate-utility-bar-search-dialog {
-		display: none;
 		background-color: $default-accent-color;
 		position: fixed;
 		top: 0;
