@@ -165,7 +165,7 @@ export default class UtilityBar {
             closeTxt.style.display = "inline";
             closeIcon.style.display = "inline";
         } else {
-            this.searchToggleBtn.style = "";
+            this.searchToggleBtn.style.cssText = "";
             showTxt.style.display = "inline";
             showIcon.style.display = "inline";
             closeTxt.style.display = "none";
