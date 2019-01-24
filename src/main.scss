@@ -395,6 +395,10 @@ html { margin-top: $ub-height !important; }
 @media screen and (min-width: 500px) {
 	
 	#ncstate-utility-bar {
+
+		#ncstate-utility-bar-search-btn {
+			min-width: 128px;
+		}
 		
 		.ncstate-utility-bar-links{
 			overflow: auto;
