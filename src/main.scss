@@ -230,6 +230,7 @@ html { margin-top: $ub-height !important; }
 		height: $ub-height;
 		display: flex;
 		margin-left: auto;
+		align-self: flex-start;
 
 		.wolficon {
 			height: 1.2em;
