@@ -85,8 +85,9 @@ html { margin-top: $ub-height !important; }
 
 	.ncstate-utility-bar-wrapper-primary{
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		padding-right: 0;
+		height: $ub-height;
 	}
 	
 	// resources container
@@ -230,7 +231,6 @@ html { margin-top: $ub-height !important; }
 		height: $ub-height;
 		display: flex;
 		margin-left: auto;
-		align-self: flex-start;
 
 		.wolficon {
 			height: 1.2em;
@@ -562,9 +562,8 @@ html { margin-top: $ub-height !important; }
 		background-image:url("https://cdn.ncsu.edu/brand-assets/utility-bar/img/ncstate-brick-2x2-red.jpg");
 		background-repeat:no-repeat;
 		background-size:contain;
-		height:60px;
+		height: 70px;
 		color:transparent;
-		height:60px;
 		&:hover {
 			background-color: transparent;
 		}
