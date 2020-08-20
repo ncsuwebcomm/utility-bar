@@ -293,6 +293,48 @@ html { margin-top: 30px !important; }
 		right: 0px;
 	}
 
+	.ncstate-utility-bar-covid{
+
+		float: left;
+
+		a{
+			display: block;
+			text-align: center;
+			background-color: #900;
+			width: 80px;
+			height: 30px;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			line-height: 14px;
+			letter-spacing: 0.02em;
+			padding: 8px 13px;
+
+			&:hover{
+				background-color: #5e0000;
+			}
+		}
+
+	}
+
+	.covid-text{
+		display: none;
+	}
+
+	@media screen and (min-width: 620px) {
+
+		.ncstate-utility-bar-covid{
+
+			a{
+      	width: 140px;
+			}
+		}
+
+		.covid-text{
+			display: inline;
+		}
+
+	}
+
 	.ncstate-utility-bar-toggle{
 	
 		float: left;
@@ -402,8 +444,8 @@ html { margin-top: 30px !important; }
 
 // wider mobile devices & small tablets
 
-@media screen and (min-width: 500px) {
 	
+@media screen and (min-width: 528px) {
 	#ncstate-utility-bar {
 		
 		.ncstate-utility-bar-links{
@@ -508,9 +550,9 @@ html { margin-top: 30px !important; }
 			background-color: $gray-resources-color;
 
 			&:hover {
-				background-color: darken($gray-resources-color, 10%);
+				background-color: #5e0000;
 				& + .indicator {
-					border-top: 8px solid darken($gray-resources-color, 10%);
+					border-top: 8px solid #5e0000;
 				}
 			}
 		}
