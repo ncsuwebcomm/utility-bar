@@ -353,11 +353,11 @@ html { margin-top: 30px !important; }
 			line-height: 14px;
 			letter-spacing: 0.02em;
 			padding: 8px 13px;
-		
+
 			&:hover{
-				background-color: darken($default-resources-color, 10%);
+				background-color: #5e0000;
 				& + .indicator {
-					border-top: 8px solid darken($default-resources-color, 10%);
+					border-top: 8px solid #5e0000;
 				}
 			}
 		}
