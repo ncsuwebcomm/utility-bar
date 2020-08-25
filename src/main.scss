@@ -241,6 +241,47 @@ html { margin-top: $ub-height !important; }
 		}
 	}
 
+	.ncstate-utility-bar-covid{
+
+		float: left;
+
+		a{
+			display: block;
+			text-align: center;
+			background-color: #900;
+			width: 90px;
+			height: $ub-height;
+			text-transform: uppercase;
+			font-size: 0.9em;
+			line-height: $ub-height;
+			padding: 0 12px;
+
+			&:hover{
+				background-color: #5e0000;
+			}
+		}
+
+	}
+
+	.covid-text{
+		display: none;
+	}
+
+	@media screen and (min-width: 620px) {
+
+		.ncstate-utility-bar-covid{
+
+			a{
+				width: 150px;
+			}
+		}
+
+		.covid-text{
+			display: inline;
+		}
+
+	}
+
 	.ncstate-utility-bar-toggle{
 		a{
 			display: block;
@@ -252,9 +293,9 @@ html { margin-top: $ub-height !important; }
 			padding: 0 12px;
 		
 			&:hover{
-				background-color: darken($default-resources-color, 10%);
+				background-color: #5e0000;
 				& + .indicator {
-					border-top: 8px solid darken($default-resources-color, 10%);
+					border-top: 8px solid #5e0000;
 				}
 			}
 		}
@@ -393,8 +434,8 @@ html { margin-top: $ub-height !important; }
 	}
 }
 
-@media screen and (min-width: 500px) {
-	
+
+@media screen and (min-width: 528px) {
 	#ncstate-utility-bar {
 
 		#ncstate-utility-bar-search-btn {
@@ -499,9 +540,9 @@ html { margin-top: $ub-height !important; }
 			background-color: $gray-resources-color;
 
 			&:hover {
-				background-color: darken($gray-resources-color, 10%);
+				background-color: #5e0000;
 				& + .indicator {
-					border-top: 8px solid darken($gray-resources-color, 10%);
+					border-top: 8px solid #5e0000;
 				}
 			}
 		}
