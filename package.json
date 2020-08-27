@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/ncstate/utility-bar#readme",
   "devDependencies": {
-    "laravel-mix": "^1.7.2"
+    "laravel-mix": "^5.0.5",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^6.0.7",
+    "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
     "es6-object-assign": "^1.1.0"
