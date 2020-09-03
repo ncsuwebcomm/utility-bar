@@ -242,14 +242,10 @@ html { margin-top: $ub-height !important; }
 	}
 
 	.ncstate-utility-bar-covid{
-
-		float: left;
-
 		a{
 			display: block;
 			text-align: center;
 			background-color: #900;
-			width: 90px;
 			height: $ub-height;
 			text-transform: uppercase;
 			font-size: 0.9em;
@@ -268,18 +264,9 @@ html { margin-top: $ub-height !important; }
 	}
 
 	@media screen and (min-width: 620px) {
-
-		.ncstate-utility-bar-covid{
-
-			a{
-				width: 150px;
-			}
-		}
-
 		.covid-text{
 			display: inline;
 		}
-
 	}
 
 	.ncstate-utility-bar-toggle{
