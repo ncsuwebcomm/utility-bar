@@ -21,6 +21,7 @@ mix.webpackConfig({
             test: /\.html$/,
             loader: 'html-loader',
             options: {
+                minimize: true,
                 removeAttributeQuotes: false,
                 conservativeCollapse: false
             }
