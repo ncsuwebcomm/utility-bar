@@ -209,6 +209,7 @@ html { margin-top: $ub-height !important; }
 	// Home button
 		
 	.ncstate-utility-bar-home{
+		flex-shrink: 0;
 
 		a {
 			display: block;
@@ -242,6 +243,8 @@ html { margin-top: $ub-height !important; }
 	}
 
 	.ncstate-utility-bar-covid{
+		flex-shrink: 0;
+
 		a{
 			display: block;
 			text-align: center;
@@ -304,6 +307,7 @@ html { margin-top: $ub-height !important; }
 	}
 	
 	#ncstate-utility-bar-search-btn {
+		flex-shrink: 0;
 		flex-grow: 1;
 		color: $default-text-color;
 		background: $default-search-bg;
